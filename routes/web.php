@@ -22,6 +22,7 @@ Route::get('/euro_igko',[HomeController::class, 'euro_igko'])->name('euro_igko')
 Route::get('/iao_exam', [HomeController::class, 'iao_exam'])->name('iao_exam');
 Route::get('/iso_exam', [HomeController::class, 'iso_exam'])->name('iso_exam');
 Route::get('/imo_exam', [HomeController::class, 'imo_exam'])->name('imo_exam');
+Route::get('/igko_exam', [HomeController::class, 'igko_exam'])->name('igko_exam');
 // iso classes :::::
 Route::get('/iso_1', [HomeController::class, 'iso_1'])->name('iso_1');
 Route::get('/iso_2', [HomeController::class, 'iso_2'])->name('iso_2');
@@ -34,7 +35,41 @@ Route::get('/iso_8', [HomeController::class, 'iso_8'])->name('iso_8');
 
 // imo classes::::::::::
 Route::get('/imo_1',[HomeController::class, 'imo_1'])->name('imo_1');
+Route::get('/imo_2',[HomeController::class, 'imo_2'])->name('imo_2');
+Route::get('/imo_3',[HomeController::class, 'imo_3'])->name('imo_3');
+Route::get('/imo_4',[HomeController::class, 'imo_4'])->name('imo_4');
+Route::get('/imo_5',[HomeController::class, 'imo_5'])->name('imo_5');
+Route::get('/imo_6',[HomeController::class, 'imo_6'])->name('imo_6');
+Route::get('/imo_7',[HomeController::class, 'imo_7'])->name('imo_7');
+Route::get('/imo_8',[HomeController::class, 'imo_8'])->name('imo_8');
+Route::get('/imo_9',[HomeController::class, 'imo_9'])->name('imo_9');
+Route::get('/imo_10',[HomeController::class, 'imo_10'])->name('imo_10');
 
+// igko classes::::::::::
+Route::get('/igko_1',[HomeController::class, 'igko_1'])->name('igko_1');
+Route::get('/igko_2',[HomeController::class, 'igko_2'])->name('igko_2');
+Route::get('/igko_3',[HomeController::class, 'igko_3'])->name('igko_3');
+Route::get('/igko_4',[HomeController::class, 'igko_4'])->name('igko_4');
+Route::get('/igko_5',[HomeController::class, 'igko_5'])->name('igko_5');
+Route::get('/igko_6',[HomeController::class, 'igko_6'])->name('igko_6');
+Route::get('/igko_7',[HomeController::class, 'igko_7'])->name('igko_7');
+Route::get('/igko_8',[HomeController::class, 'igko_8'])->name('igko_8');
+Route::get('/igko_9',[HomeController::class, 'igko_9'])->name('igko_9');
+Route::get('/igko_10',[HomeController::class, 'igko_10'])->name('igko_10');
+
+// iao classes::::::::::
+Route::get('/iao_1',[HomeController::class, 'iao_1'])->name('iao_1');
+Route::get('/iao_2',[HomeController::class, 'iao_2'])->name('iao_2');
+Route::get('/iao_3',[HomeController::class, 'iao_3'])->name('iao_3');
+Route::get('/iao_4',[HomeController::class, 'iao_4'])->name('iao_4');
+Route::get('/iao_5',[HomeController::class, 'iao_5'])->name('iao_5');
+Route::get('/iao_6',[HomeController::class, 'iao_6'])->name('iao_6');
+Route::get('/iao_7',[HomeController::class, 'iao_7'])->name('iao_7');
+Route::get('/iao_8',[HomeController::class, 'iao_8'])->name('iao_8');
+Route::get('/iao_9',[HomeController::class, 'iao_9'])->name('iao_9');
+Route::get('/iao_10',[HomeController::class, 'iao_10'])->name('iao_10');
+
+//
 // Route::get('/', function () {
 //     return view('frontend.index');
 // });

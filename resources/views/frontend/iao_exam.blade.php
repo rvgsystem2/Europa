@@ -9,7 +9,7 @@
         <div class="container mx-auto px-4 md:px-8">
 
             <p class="text-lg leading-relaxed">
-                The Europa International General Knowledge Olympiad (EIGKO) is an international competitive exam held for
+                The Europa International Aptitude Olympiad (EIAO) is an international competitive exam held for
                 students in Grades 1 - 10. There will be 2
                 levels for students of all Grades 1 - 10. The exam is an objective-type test that the students need to
                 complete in 60 minutes.

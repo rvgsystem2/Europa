@@ -1,6 +1,6 @@
 <!-- Top Bar -->
 <div
-    class="bg-gray-700 text-white py-2 px-2 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
+    class="bg-[#626E82] text-white py-2 px-2 md:px-12 lg:px-24 flex flex-col md:flex-row items-center justify-between text-center md:text-left">
     <!-- Email -->
     <div class="text-sm mb-1 md:mb-0">
         <a href="mailto:info@europaolympiad.org" class="hover:text-gray-400">info@europaolympiad.org</a>
@@ -44,7 +44,7 @@
 <nav class="bg-white text-black p-4">
     <div class="container mx-auto flex justify-between md:justify-evenly items-center">
         <a href="/" class="text-2xl font-bold ">
-            <img src="{{ asset('asset/img/Logo_Europa.jpg') }}" alt="" class="h-14 md:w-90 w-44 ">
+            <img src="{{ asset('asset/img/Logo_Europa.jpg') }}" alt="" class="h-14 md:w-90 w-56 ">
         </a>
         <button id="menu-btn" class="md:hidden focus:outline-none">
             <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
@@ -53,9 +53,9 @@
             </svg>
         </button>
         <ul class="hidden md:flex gap-6" id="menu">
-            <li><a href="/" class="hover:text-gray-300">Home</a></li>
+            <li><a href="/" class="hover:text-gray-600">Home</a></li>
             <li class="relative">
-                <button id="dropdown-btn" class="flex items-center hover:text-gray-300">Europa IGKO
+                <button id="dropdown-btn" class="flex items-center hover:text-gray-600">Europa IGKO
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -63,22 +63,22 @@
                 </button>
                 <ul class="hidden absolute left-0 mt-2 w-48 bg-white text-black shadow-md rounded-md z-10"
                     id="dropdown">
-                    <li><a href="{{route('euro_igko')}}" class="block px-4 py-2 hover:bg-gray-200">IGKO Exam</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 1</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 2</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 3</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 4</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 5</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 6</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 7</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 8</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 9</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 10</a></li>
+                    <li><a href="{{route('igko_exam')}}" class="block px-4 py-2 hover:bg-gray-200">IGKO Exam</a></li>
+                    <li><a href="{{route('igko_1')}}" class="block px-4 py-2 hover:bg-gray-200">Class 1</a></li>
+                    <li><a href="{{route('igko_2')}}" class="block px-4 py-2 hover:bg-gray-200">Class 2</a></li>
+                    <li><a href="{{route('igko_3')}}" class="block px-4 py-2 hover:bg-gray-200">Class 3</a></li>
+                    <li><a href="{{route('igko_4')}}" class="block px-4 py-2 hover:bg-gray-200">Class 4</a></li>
+                    <li><a href="{{route('igko_5')}}" class="block px-4 py-2 hover:bg-gray-200">Class 5</a></li>
+                    <li><a href="{{route('igko_6')}}" class="block px-4 py-2 hover:bg-gray-200">Class 6</a></li>
+                    <li><a href="{{route('igko_7')}}" class="block px-4 py-2 hover:bg-gray-200">Class 7</a></li>
+                    <li><a href="{{route('igko_8')}}" class="block px-4 py-2 hover:bg-gray-200">Class 8</a></li>
+                    <li><a href="{{route('igko_9')}}" class="block px-4 py-2 hover:bg-gray-200">Class 9</a></li>
+                    <li><a href="{{route('igko_10')}}" class="block px-4 py-2 hover:bg-gray-200">Class 10</a></li>
 
                 </ul>
             </li>
             <li class="relative">
-                <button id="dropdown-btn" class="flex items-center hover:text-gray-300">Europa IAO
+                <button id="dropdown-btn" class="flex items-center hover:text-gray-600">Europa IAO
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
@@ -87,21 +87,21 @@
                 <ul class="hidden absolute left-0 mt-2 w-48 bg-white text-black shadow-md rounded-md z-10"
                     id="dropdown">
                     <li><a href="{{route('iao_exam')}}" class="block px-4 py-2 hover:bg-gray-200">IAO Exam</a></li>
-                    <li><a href="{{route('class_1')}}" class="block px-4 py-2 hover:bg-gray-200">Class 1</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 2</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 3</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 4</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 5</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 6</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 7</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 8</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 9</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 10</a></li>
+                    <li><a href="{{route('iao_1')}}" class="block px-4 py-2 hover:bg-gray-200">Class 1</a></li>
+                    <li><a href="{{route('iao_2')}}" class="block px-4 py-2 hover:bg-gray-200">Class 2</a></li>
+                    <li><a href="{{route('iao_3')}}" class="block px-4 py-2 hover:bg-gray-200">Class 3</a></li>
+                    <li><a href="{{route('iao_4')}}" class="block px-4 py-2 hover:bg-gray-200">Class 4</a></li>
+                    <li><a href="{{route('iao_5')}}" class="block px-4 py-2 hover:bg-gray-200">Class 5</a></li>
+                    <li><a href="{{route('iao_6')}}" class="block px-4 py-2 hover:bg-gray-200">Class 6</a></li>
+                    <li><a href="{{route('iao_7')}}" class="block px-4 py-2 hover:bg-gray-200">Class 7</a></li>
+                    <li><a href="{{route('iao_8')}}" class="block px-4 py-2 hover:bg-gray-200">Class 8</a></li>
+                    <li><a href="{{route('iao_9')}}" class="block px-4 py-2 hover:bg-gray-200">Class 9</a></li>
+                    <li><a href="{{route('iao_10')}}" class="block px-4 py-2 hover:bg-gray-200">Class 10</a></li>
 
                 </ul>
             </li>
             <li class="relative">
-                <button id="dropdown-btn" class="flex items-center hover:text-gray-300">Europa ISO
+                <button id="dropdown-btn" class="flex items-center hover:text-gray-600">Europa ISO
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -125,7 +125,7 @@
                 </ul>
             </li>
             <li class="relative">
-                <button id="dropdown-btn" class="flex items-center hover:text-gray-300">Europa IMO
+                <button id="dropdown-btn" class="flex items-center hover:text-gray-600">Europa IMO
                     <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
@@ -136,21 +136,21 @@
                     id="dropdown">
                     <li><a href="{{route('imo_exam')}}" class="block px-4 py-2 hover:bg-gray-200">IMO Exam </a></li>
                     <li><a href="{{route('imo_1')}}" class="block px-4 py-2 hover:bg-gray-200">Class 1</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 2</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 3</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 4</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 5</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 6</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 7</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 8</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 9</a></li>
-                    <li><a href="#" class="block px-4 py-2 hover:bg-gray-200">Class 10</a></li>
+                    <li><a href="{{route('imo_2')}}" class="block px-4 py-2 hover:bg-gray-200">Class 2</a></li>
+                    <li><a href="{{route('imo_3')}}" class="block px-4 py-2 hover:bg-gray-200">Class 3</a></li>
+                    <li><a href="{{route('imo_4')}}" class="block px-4 py-2 hover:bg-gray-200">Class 4</a></li>
+                    <li><a href="{{route('imo_5')}}" class="block px-4 py-2 hover:bg-gray-200">Class 5</a></li>
+                    <li><a href="{{route('imo_6')}}" class="block px-4 py-2 hover:bg-gray-200">Class 6</a></li>
+                    <li><a href="{{route('imo_7')}}" class="block px-4 py-2 hover:bg-gray-200">Class 7</a></li>
+                    <li><a href="{{route('imo_8')}}" class="block px-4 py-2 hover:bg-gray-200">Class 8</a></li>
+                    <li><a href="{{route('imo_9')}}" class="block px-4 py-2 hover:bg-gray-200">Class 9</a></li>
+                    <li><a href="{{route('imo_10')}}" class="block px-4 py-2 hover:bg-gray-200">Class 10</a></li>
 
                 </ul>
             </li>
-            <li><a href="{{route('about')}}" class="hover:text-gray-300">About us</a></li>
-            <li><a href="{{route('contact')}}" class="hover:text-gray-300">Contact</a></li>
-            {{-- <li><a href="#" class="hover:text-gray-300">Register</a></li> --}}
+            <li><a href="{{route('about')}}" class="hover:text-gray-600">About us</a></li>
+            <li><a href="{{route('contact')}}" class="hover:text-gray-600">Contact</a></li>
+            {{-- <li><a href="#" class="hover:text-gray-600">Register</a></li> --}}
 
             <button onclick="togglePopup()" class=" text-black border border-black p-2 hover:bg-gray-300 rounded">Registration</button>
             {{--
@@ -358,9 +358,9 @@
     </div>
     {{-- mobile menu --}}
     <ul class="hidden md:hidden space-y-2 top-0 left-0 w-full bg-white  z-50" id="mobile-menu">
-        <li><a href="#" class="block py-2 hover:text-gray-300">Home</a></li>
+        <li><a href="/" class="block py-2 hover:text-gray-600">Home</a></li>
         <li class="relative">
-            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-300"><a
+            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-600"><a
                     href="#">Europa IGKO</a>
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
@@ -368,85 +368,86 @@
                 </svg>
             </button>
             <ul class="hidden mt-2 space-y-2 pl-4" id="mobile-dropdown">
-                <li><a href="#" class="block py-2 hover:text-gray-300">IGKO Exam</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 1</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 2</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 3</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 4</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 5</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 6</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 7</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 8</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 9</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 10</a></li>
+                <li><a href="{{route('igko_exam')}}" class="block py-2 hover:text-gray-600">IGKO Exam</a></li>
+                <li><a href="{{route('igko_1')}}" class="block py-2 hover:text-gray-600">Class 1</a></li>
+                <li><a href="{{route('igko_2')}}" class="block py-2 hover:text-gray-600">class 2</a></li>
+                <li><a href="{{route('igko_3')}}" class="block py-2 hover:text-gray-600">Class 3</a></li>
+                <li><a href="{{route('igko_4')}}" class="block py-2 hover:text-gray-600">class 4</a></li>
+                <li><a href="{{route('igko_5')}}" class="block py-2 hover:text-gray-600">Class 5</a></li>
+                <li><a href="{{route('igko_6')}}" class="block py-2 hover:text-gray-600">class 6</a></li>
+                <li><a href="{{route('igko_7')}}" class="block py-2 hover:text-gray-600">Class 7</a></li>
+                <li><a href="{{route('igko_8')}}" class="block py-2 hover:text-gray-600">class 8</a></li>
+                <li><a href="{{route('igko_9')}}" class="block py-2 hover:text-gray-600">Class 9</a></li>
+                <li><a href="{{route('igko_10')}}" class="block py-2 hover:text-gray-600">class 10</a></li>
             </ul>
         </li>
         <li class="relative">
-            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-300">Europa IAO
+            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-600">Europa IAO
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
             <ul class="hidden mt-2 space-y-2 pl-4" id="mobile-dropdown">
-                <li><a href="#" class="block py-2 hover:text-gray-300">IAO Exam</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 1</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 2</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 3</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 4</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 5</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 6</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 7</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 8</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 9</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 10</a></li>
+                <li><a href="{{route('iao_exam')}}" class="block py-2 hover:text-gray-600">IAO Exam</a></li>
+                <li><a href="{{route('iao_1')}}" class="block py-2 hover:text-gray-600">Class 1</a></li>
+                <li><a href="{{route('iao_2')}}" class="block py-2 hover:text-gray-600">class 2</a></li>
+                <li><a href="{{route('iao_3')}}" class="block py-2 hover:text-gray-600">Class 3</a></li>
+                <li><a href="{{route('iao_4')}}" class="block py-2 hover:text-gray-600">class 4</a></li>
+                <li><a href="{{route('iao_5')}}" class="block py-2 hover:text-gray-600">Class 5</a></li>
+                <li><a href="{{route('iao_6')}}" class="block py-2 hover:text-gray-600">class 6</a></li>
+                <li><a href="{{route('iao_7')}}" class="block py-2 hover:text-gray-600">Class 7</a></li>
+                <li><a href="{{route('iao_8')}}" class="block py-2 hover:text-gray-600">class 8</a></li>
+                <li><a href="{{route('iao_9')}}" class="block py-2 hover:text-gray-600">Class 9</a></li>
+                <li><a href="{{route('iao_10')}}" class="block py-2 hover:text-gray-600">class 10</a></li>
             </ul>
         </li>
         <li class="relative">
-            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-300">Europa ISO
+            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-600">Europa ISO
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
             <ul class="hidden mt-2 space-y-2 pl-4" id="mobile-dropdown">
-                <li><a href="#" class="block py-2 hover:text-gray-300">ISO Exam</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 1</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 2</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 3</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 4</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 5</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 6</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 7</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 8</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 9</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 10</a></li>
+                <li><a href="{{route('iso_exam')}}" class="block py-2 hover:text-gray-600">ISO Exam</a></li>
+                <li><a href="{{route('iso_1')}}" class="block py-2 hover:text-gray-600">Class 1</a></li>
+                <li><a href="{{route('iso_2')}}" class="block py-2 hover:text-gray-600">class 2</a></li>
+                <li><a href="{{route('iso_3')}}" class="block py-2 hover:text-gray-600">Class 3</a></li>
+                <li><a href="{{route('iso_4')}}" class="block py-2 hover:text-gray-600">class 4</a></li>
+                <li><a href="{{route('iso_5')}}" class="block py-2 hover:text-gray-600">Class 5</a></li>
+                <li><a href="{{route('iso_6')}}" class="block py-2 hover:text-gray-600">class 6</a></li>
+                <li><a href="{{route('iso_7')}}" class="block py-2 hover:text-gray-600">Class 7</a></li>
+                <li><a href="{{route('iso_8')}}" class="block py-2 hover:text-gray-600">class 8</a></li>
+                {{-- <li><a href="{{route('iso_9')}}" class="block py-2 hover:text-gray-600">Class 9</a></li>
+                <li><a href="{{route('iso_10')}}" class="block py-2 hover:text-gray-600">class 10</a></li>
+            --}}
             </ul>
         </li>
         <li class="relative">
-            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-300">Europa IMO
+            <button id="mobile-dropdown-btn" class="flex items-center gap-2 hover:text-gray-600">Europa IMO
                 <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                     xmlns="http://www.w3.org/2000/svg">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                 </svg>
             </button>
             <ul class="hidden mt-2 space-y-2 pl-4" id="mobile-dropdown">
-                <li><a href="#" class="block py-2 hover:text-gray-300">IMO Exam</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 1</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 2</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 3</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 4</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 5</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 6</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 7</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 8</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">Class 9</a></li>
-                <li><a href="#" class="block py-2 hover:text-gray-300">class 10</a></li>
+                <li><a href="{{route('imo_exam')}}" class="block py-2 hover:text-gray-600">IMO Exam</a></li>
+                <li><a href="{{route('imo_1')}}" class="block py-2 hover:text-gray-600">Class 1</a></li>
+                <li><a href="{{route('imo_2')}}" class="block py-2 hover:text-gray-600">class 2</a></li>
+                <li><a href="{{route('imo_3')}}" class="block py-2 hover:text-gray-600">Class 3</a></li>
+                <li><a href="{{route('imo_4')}}" class="block py-2 hover:text-gray-600">class 4</a></li>
+                <li><a href="{{route('imo_5')}}" class="block py-2 hover:text-gray-600">Class 5</a></li>
+                <li><a href="{{route('imo_6')}}" class="block py-2 hover:text-gray-600">class 6</a></li>
+                <li><a href="{{route('imo_7')}}" class="block py-2 hover:text-gray-600">Class 7</a></li>
+                <li><a href="{{route('imo_8')}}" class="block py-2 hover:text-gray-600">class 8</a></li>
+                <li><a href="{{route('imo_9')}}" class="block py-2 hover:text-gray-600">Class 9</a></li>
+                <li><a href="{{route('imo_10')}}" class="block py-2 hover:text-gray-600">class 10</a></li>
 
             </ul>
         </li>
-        <li><a href="#" class="block py-2 hover:text-gray-300">About us</a></li>
-        <li><a href="#" class="block py-2 hover:text-gray-300">Contact</a></li>
+        <li><a href="{{route('about')}}" class="block py-2 hover:text-gray-600">About us</a></li>
+        <li><a href="{{route('contact')}}" class="block py-2 hover:text-gray-600">Contact</a></li>
         <!-- Register Button -->
         <button onclick="toggleMobilePopup()" class="block p-2 border border-black hover:text-gray-600 cursor-pointer">Registration</button>
 

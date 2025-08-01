@@ -25,8 +25,8 @@
 
                 <div class="mt-4 bg-red-100 p-4 rounded-lg shadow-sm">
                     <p class="text-gray-900 font-semibold">🌐 Website:</p>
-                    <a href="https://www.europaolympiad.org" class="text-red-600 font-medium hover:underline">
-                        www.europaolympiad.org
+                    <a href="#" class="text-red-600 font-medium hover:underline">
+                        Europa Olympiad
                     </a>
                 </div>
 

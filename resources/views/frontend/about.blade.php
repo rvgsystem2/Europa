@@ -1,235 +1,211 @@
 @extends('component.main')
 
 @section('content')
-<header class="bg-gradient-to-r from-red-700 to-red-500 text-white py-12 shadow-lg">
-    <div class="container mx-auto flex flex-col md:flex-row items-center justify-center px-6 gap-8">
-        <h1 class="text-3xl md:text-6xl font-extrabold text-center md:text-left tracking-wide">
-            About Us
-        </h1>
-        <img src="{{ asset('asset/img/globe.png') }}" alt="Globe" class="h-32 w-32 md:h-40 md:w-40 ">
-    </div>
-</header>
+    <header class="relative h-80 md:h-[32rem] overflow-hidden shadow-lg">
+        <!-- Background Image -->
+        <img src="https://cdn.pixabay.com/photo/2016/10/04/17/12/banner-1714905_1280.jpg"
+            alt="Globe Banner" class="absolute inset-0 w-full h-auto object-cover " />
 
-<section class="flex items-center justify-center min-h-auto py-10 px-6 bg-gray-50">
-    <div class="max-w-3xl text-center">
-        <h2 class="text-lg md:text-xl font-bold text-gray-800 leading-snug">
-            At <span class="text-yellow-500">Europa Olympiad</span>, we strive to honor each child by nurturing their innate sense of 
-            <span class="italic underline">wonder and curiosity</span>.
-        </h2>
-    </div>
-</section>
+        <!-- Overlay -->
+        <div class="absolute inset-0 "></div>
 
-<section class="bg-gray-100 py-16 px-6">
-    <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-        <div class="md:w-1/2 text-center md:text-left">
-            <h2 class="text-4xl font-extrabold text-red-600">About Us</h2>
-            <h3 class="text-2xl font-light text-gray-700 mt-2">Welcome to Europa Olympiad</h3>
-            <p class="text-gray-700 mt-6 leading-relaxed">
-                Europa Olympiad Foundation is a registered organization established by the 
-                <span class="font-semibold">Government of India in 2023</span> by leading educationists and national-level social workers. 
-                Our mission is to provide students with <strong class="text-red-500">international-level education and examinations</strong>.
-            </p>
-            <p class="text-gray-700 mt-6 leading-relaxed">
-                All our activities aim to make learning an <strong class="text-red-500">interactive and engaging</strong> process where students can apply 
-                their skills, memory, and knowledge effectively.
-            </p>
-        </div>
-        <div class="md:w-1/2 flex justify-center">
-            <img src="{{ asset('asset/img/logo-short.jpg') }}" 
-                 alt="Europa Olympiad Students" class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-300">
-        </div>
-    </div>
-</section>
-
-<section class="bg-blue-50 py-16 px-6">
-    <div class="max-w-6xl mx-auto text-center">
-        <h2 class="text-red-600 font-semibold uppercase tracking-widest text-lg">Why Choose Us?</h2>
-        <h3 class="text-4xl font-bold text-gray-800 mt-4">Why Choose Europa Olympiad?</h3>
-        <p class="text-gray-700 mt-6 max-w-2xl mx-auto leading-relaxed">
-            To ensure our children are well equipped to thrive in the future, we emphasize an unparalleled education experience,
-            encouraging students to explore their potential and the wonders of the world.
-        </p>
-    </div>
-
-    <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transform hover:scale-105 transition duration-300">
-            <img src="{{ asset('asset/img/globe.png') }}" alt="Icon" class="w-14 mb-4">
-            <p class="text-gray-700 text-lg text-center">
-                We offer <span class="text-red-500 font-semibold">free exams</span> for students with major physical disabilities.
-            </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transform hover:scale-105 transition duration-300">
-            <img src="{{ asset('asset/img/globe.png') }}" alt="Icon" class="w-14 mb-4">
-            <p class="text-gray-700 text-lg text-center">
-                Children of single mothers or under guardianship are <span class="text-red-500 font-semibold">exempted from fees</span>.
-            </p>
-        </div>
-        <div class="bg-white p-6 rounded-lg shadow-md flex flex-col items-center hover:shadow-lg transform hover:scale-105 transition duration-300">
-            <img src="{{ asset('asset/img/globe.png') }}" alt="Icon" class="w-14 mb-4">
-            <p class="text-gray-700 text-lg text-center">
-                <span class="text-red-500 font-semibold">Teachers’ children</span> are also provided free exams.
-            </p>
-        </div>
-    </div>
-</section>
-
-<section class="bg-gray-400 py-16 px-6 text-white text-center">
-    <h2 class="text-xl font-semibold uppercase tracking-widest">What Parents Say</h2>
-    <h3 class="text-4xl font-bold mt-2">Kind Words from Our Parents</h3>
-    <p class="text-lg mt-4 max-w-2xl mx-auto">
-        Hear directly from parents about their experience with us.
-    </p>
-
-    <div class="mt-12 relative max-w-4xl mx-auto px-4">
-        <div class="overflow-hidden relative">
-            <!-- Wrapper to avoid flickering -->
-            <div class="flex transition-transform duration-700 ease-in-out" id="testimonial-slider">
-                <!-- Cloned slides for seamless looping -->
-                <div class="slide bg-white text-gray-800 shadow-lg rounded-lg p-6 min-w-full text-center">
-                    <p class="italic">"The teachers are amazing, and the environment is so supportive!"</p>
-                    <h4 class="mt-4 text-lg font-semibold">Michael Thomson</h4>
-                </div>
-                <div class="slide bg-white text-gray-800 shadow-lg rounded-lg p-6 min-w-full text-center">
-                    <p class="italic">"My child is thriving academically and socially. Thank you for the wonderful experience!"</p>
-                    <h4 class="mt-4 text-lg font-semibold">Daniel Radplateu</h4>
-                </div>
-                <div class="slide bg-white text-gray-800 shadow-lg rounded-lg p-6 min-w-full text-center">
-                    <p class="italic">"This school has helped my child gain confidence and excel in studies."</p>
-                    <h4 class="mt-4 text-lg font-semibold">Sussan Joseph</h4>
-                </div>
-                <!-- Cloned first slide to create infinite loop effect -->
-                <div class="slide bg-white text-gray-800 shadow-lg rounded-lg p-6 min-w-full text-center">
-                    <p class="italic">"The teachers are amazing, and the environment is so supportive!"</p>
-                    <h4 class="mt-4 text-lg font-semibold">Michael Thomson</h4>
-                </div>
+        <!-- Content -->
+        <div class="relative z-10 flex items-center justify-center h-full px-6">
+            <div class="text-center md:text-left max-w-4xl">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-black tracking-wide leading-tight">
+                    About Us
+                </h1>
+                <p class="mt-4 text-lg md:text-xl text-gray-800 font-light">
+                    Discover who we are, what we do, and why we do it with passion and purpose.
+                </p>
             </div>
         </div>
-
-        <!-- Navigation Buttons -->
-        <button id="prev" class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-red-700 text-white px-4 py-2 rounded-full shadow-md hover:bg-red-800">
-            ❮
-        </button>
-        <button id="next" class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-red-700 text-white px-4 py-2 rounded-full shadow-md hover:bg-red-800">
-            ❯
-        </button>
-    </div>
-</section>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const slider = document.getElementById("testimonial-slider");
-        const slides = document.querySelectorAll(".slide");
-        const prevButton = document.getElementById("prev");
-        const nextButton = document.getElementById("next");
-        let index = 1; // Start from the second slide (first real one)
-        let isTransitioning = false;
-
-        function updateSlider() {
-            slider.style.transition = "transform 0.7s ease-in-out";
-            slider.style.transform = `translateX(-${index * 100}%)`;
-        }
-
-        function nextSlide() {
-            if (isTransitioning) return;
-            isTransitioning = true;
-            index++;
-            updateSlider();
-
-            // Reset position when reaching the cloned last slide
-            setTimeout(() => {
-                if (index === slides.length - 1) {
-                    slider.style.transition = "none";
-                    index = 1; // Jump back to the first real slide
-                    slider.style.transform = `translateX(-${index * 100}%)`;
-                }
-                isTransitioning = false;
-            }, 700);
-        }
-
-        function prevSlide() {
-            if (isTransitioning) return;
-            isTransitioning = true;
-            index--;
-            updateSlider();
-
-            // Reset position when reaching the first cloned slide
-            setTimeout(() => {
-                if (index === 0) {
-                    slider.style.transition = "none";
-                    index = slides.length - 2; // Jump to the last real slide
-                    slider.style.transform = `translateX(-${index * 100}%)`;
-                }
-                isTransitioning = false;
-            }, 700);
-        }
-
-        nextButton.addEventListener("click", nextSlide);
-        prevButton.addEventListener("click", prevSlide);
-
-        // Auto-slide every 3 seconds
-        setInterval(nextSlide, 3000);
-    });
-</script>
+    </header>
 
 
- 
-    <section class="py-12">
-        <div class="container mx-auto text-center">
-            <h2 class="text-4xl font-bold text-gray-800">Meet Our Team</h2>
-            <p class="text-gray-600 mt-2">Our dedicated professionals</p>
+    <section class="flex items-center justify-center min-h-auto py-10 px-6 bg-gray-50">
+        <div class="max-w-3xl text-center">
+            <h2 class="text-lg md:text-xl font-bold text-gray-800 leading-snug">
+                At <span class="text-yellow-500">Europa Olympiad</span>, we strive to honor each child by nurturing their
+                innate sense of
+                <span class="italic underline">wonder and curiosity</span>.
+            </h2>
+        </div>
+    </section>
 
-            <div class="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 mt-10">
-                <!-- Team Member 1 -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAzwMBIgACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQUHAgQGAwj/xAA9EAABAwMCAwQHBQYHAQAAAAABAAIDBAURBiESEzFBUWFxBxQiMoGRoRUzQmKxI1KCwdHiFiQ0U3KSwiX/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQMEAgX/xAAgEQEAAgICAwEBAQAAAAAAAAAAAQIDESExEiJBMhME/9oADAMBAAIRAxEAPwDbSIi6QIiICIiAqoiCoiICiIgIvjVVMFJCZqqaOGIdXvcAF0qXUFnq/wDTXOkkycDhlbuUGTRBv07kQVERAREQEREBAiIA6qlQdVUHFEUQVFAqgIiICIqgIiIhFjdQXimsNqmr6s5awYYwdXu7AFkitM+lW5y3nWFFp2ne7lRFoe1va925PwaFzadcuqxuWIuhvut6qWccc0bdmtBIij8B4rqzaOulFSjNK3mNB49/eHgt2WC2wUNBHTU8TY4o2gcIXzulMxzHODQslstu4bq4a9S8B6L9az09ZHYLzM+RkruClmldl0b+yMnrg9mf6Lby/Out6M0F0ZNFlnMy9rhsQ4HYj6fJb00pdhe9P0Nwzl80Y5g/ONj9Vpx38o2yZK+M6ZdFFVYrEREBERAREQB1VTCIOCIiAFVAqgKqBVECIiJEREQhWnNM0Yu2ubnfXDIjuMkLHEnoGkYx0/d3WzdV3eOyWCsr5HhpZGRHntedmj5rU/ovvT6Wb7LqIuM3Cd88MmdwWtGR8cfqqs2/Hhfg15cvZ3GhrmVrGRW4uY6TPrEdS8Px3nG3wX11KyudyqSnlly9vG/luw7HmshFd5ai4iD2KZsbfadKcF57hn6lYy+XiSG5xPiZG3lsw57pWlp3WOZ3DfqWtNX0NUbQamppqiDlSAgTzGTOeuCfPyXuPQXcHTWOtoHuzyJ+ZGD+64b/AFysD6TboK2z7ZHE5vXzXX9C1Z6pqSSke7/UQHHiW7rThn1Y/wDRX2byCqgVWhmERUdEERVEAIiICIiDgiiIKFVFUAKqIgqIiAoVVCiGrvTRWSM+zoMgxniPBjq4/i+AH1WpGXGa33SKqpnHmU8nNidn3XdvmDgZW2fTO2ER0MjiefuGAd2Dk/p81paX38nOM9O9V27WQ/R9gr4L5a6arcGxSzRiRrieju3BWK1JSzS+3cn0nq0Z48NY0E46ZK+fo3ZFV6NpGP8AeaMEdx71iNY2mcse99RKYmgkNLsjKxTOp09GtuHgNZagF3uccFOP8rCR024sfyXCz3N9ov1HXs2NPM1xA7W9HD5ZWGlh5Ne9rtjnfK71YGHgcDv0I71rrEREaYZmbTMy/VEUjZY2vYctcMg+C5roWMObaaNrz7QhaD54C76uhSKjoomUFREQERTKCooCqg+aKKoKiBEFREQFVEQOqwVz1ZaaCSaL1unknhOJWc9jeWcdDxELL1croKaSRrJHua0lrYm8TiewAdpyvCOjuTZHV1TQV1TyRsHVcPr8GR7RY6Pq3YcTD06gnop0Nc+kW9m7XJszKmKZgj4WcmRr2tGckZBI/TyXj5RzHFwxhrAvT67lqqmuBqnVT3sjDc1Bjcep6OZs5vcepXlaXImEZyS7DcKqe1jd2h6u0WXT8LKu+WpriziLTVNy3wO67V1vmlKykDJL/b+IHOBNnK40UF0jo4eTS3zhDABybVRtPzc5fbjvbXDJ1XG3877dC0fEZIXM4Ky7/vdpK/iOW+Vz6Z4ki5h4HN6EeC+VHwvcx788TTkdxI7/ADWTvhk+3K503GXGQgmSUSOyD2uGx+C60XDG54aMNkGR5qUb523HpDXk1fTxwPtge+Ihs5hmw6Fv+45rgAG4/Mei2BBNFUQtlgkZLG4Za9jgQ4eBC/MVqqoxVxmeGOUxyNcxs33TfaGcs/HnsGR0W99FVcznVVLIyURA8cJIh4AOhDeVsOw4I2ydyrKztXaNS9UiIpcgVURBVCiIA6qqIg+aqiqChECIKiIgIiIMffml9oqmiNsvEzBY6blNI7eJ/wCFuOvhla5jmttJH6xQVulKWRjTyp6agmaIjjqJx59y2JqPl/YlWZjSctrMuNZ9yACN3jtA647cY7V43166vja+Gq1hK2V7WtqWUVLDDj8kb98b9ozt2qT61PXcupuFdE19Ny2vPCaIDk4/J+X4LEQU0bqyOOSaGEOfgyTEhg88b4Wb1rPOdR1DnziQta0Od6n6scjb2mfvd5Gx7F6DR1LJA9tfRDU/7aBodJQUEDvbycgF/wCEbYPXqq/qyZ4ZSEaejhY2WTRZ9nGZXVO/wOy+0X+HCcQTaI5nZyaGac/9e1ZUXW4N9+4a6hPdJaqV36Ap9qXAght01s7b3Y7PTtcfI8IVit4fUtsPMlqqOKSeBzeKR8Fmlo4o8dwdkY7c5XjuY8vDMjGVuh9HXVzcOtevawObh3rNxbTtPmGvx9FqrUscVuulTQuon072P3ikkD3RjHQuHUri0O6y42VkLrjGyaWliEz2gSVDC8M3z7o3d0wR29FtjSvq9DqWljYaISP4odrRJb3PGCfZJJEnTcbEdV4b0eOfCKqZor5TMDBwW1rRMA0BxJlcQI274yN/LG/uYY62nqKd0dPd2xtlZI7juTbmz2TnDmZ4mnb3m9D1yEqizZSIepRdORECuEERCiAiIg4KogQAqiqAiYVQRFUQY+/Scm01EglMJDRiQN4i3fq0YOXdwxucLyJ/w/R3KeGoqbjUXR0Zc51XPJLKGk/ue6BnsxsvZXcEWyocJuTws4jLjPKaN3OHiBkjxC8HTVAt9Ncap5ht7IA2Spjo6VrXRF4y1r5HnD5cEZAyclcZNzXhdhmsW5YDWGjZboHV1lcXyBu8Mjjlw8OLofopZKKeGkZCKLXDy0Y4aeubE0d+AH7BeyjvopfVG3C33CBtVDJNFzS17wxgy5zmtyWjBB37x27LszUFkvtGH82OogkblskbyDg9zhuPgVRS1qfpdkpW/wCXlhT1fEeC3ekVoB7Lh/eubaatOeK3ekZw7jccf+1l4tD2dwP+eubu4C4SjHgN1zGh7W4e1Jc3jxuk39VfGarPOG7z1bbTyHSz6U1TUHsNdeP7l4CDTdfddQw0BpXQGR3FL+0DzFH1OTv5DPatsVGibTFmQ2yWpjYMlklxnc49+BxYz5rqwGn0vT3BlFTQNiop4auZ8bcGehl25je57fHPQd+0b8o9XURFZ9ncgslut9GbXSUIZRuGH5fwiTvJ34nn6LqTWqz0MsxbTUDeVT8Qa20kmNmTvxMdkdpPzXC51dVTeuN50UctFcY4qmcMP7SkmH7KXIORgnBwegJGMrHXOG4W58dPUVjpYA4yQc+JnHTln3rGuaAS9oy4g5EjM7dqjHjtWdy7zZqWrEVhtyN3HG1+McQBx8FyXxoWltFTtIAIibkA5xsO3tX3VrMiKogiKogiKog4IioQEwrhEBVEQEREHF7GyMcx7Q5jgQ4HoQVrauiqRU00LWNqKkVnJt9PI3LJqs+1NVyD8TY+LAHYR5LZa8jq+21MH2hfKGeKOaK2vghLwQKdz3ZfLsCdx4fhXUSPNV0klaLlNSTPqJrjK2xW2aQ5MgBJqJvLPF07GnHYvlcRFUS3B1sc5nNraazWoxuI+7+9kx0OM7k9xWL+27fQ1FOy1vkq3W60uprXHSQvkxUv99528vksrB6paZY+U7l/Ytm5dK6ZpBkq5zh7wDgnG2fLxTsiddO3HUTQmrqKCqcYZLk+no2SDi4o42e24nr72wWSi1PNE3FwpXx4/GGktXlr7eqTT95oLHTOb/8AMoGREYL+GR/tPzgHf3fkvo+9iujwZrk7iHSmtMrx9cLJfHM24a6ZKxX2l69uoKOZuWSgbd6xL4oq2pt0bng01fS1dlnx2ZBfF9M4+C8jNY6moL5IZtQsa0ZeaqiZRxgd/MfgAfMq01Y63UcdPBf7CZWVza1hfX8wNc0AAcWBnp12VmLHNOZV5ctbcQy9ARdWWeKry03uxz2ypdj3Z4D7J8CDn5JQ1s16NlkHtSXGnD+EjaOtp3BpP8bMtPgF2NE0dVX3KjbV0VBU0kEs1Q2rpK8vEb5MlxwO8kr39Bpuz26SnfR0TYzTcfJ9txDC/wB4gE4ye9XbUMpGwRsaxnutAa3PcFyRFAIiqCKKogiKog44REQFURARVEBERAQgOBBAIO2COqKtHE4BB5y76TddHYgu1xt8WMGGj5bW/MsJ+qx9L6PKOic51A2hM+d6mspHVMmf+Tnr3YaMY7lW7Dfqd02lrir0fqWFlRUUl9a6reeJjaaCKn4z+Zxa4r4Msmto4x67qV0QO2H1DZd/hGFsx7m43YD5rqVAiL2ufECG5IwdvHPyTcmmt3afv4eJJLrS1DmnZ0lAyXHxcu5BaZ52ZugiqMkgA0kTBse4NH6r3Tjlo2Y3boBkr4SUwmbnfIzuTndcztMafHT1NBR2xsFLFFFG1zhwxtDVk1irY/gqXM3Ac3OPFZVTHSJERFKBERAUREBVREHFERAREQVUKIiFREQFzi95EUj7nqoSiLl04Y3XXuIHqcn/ABciIOBAGwXB5IYcIifBj6cYuP8AH/JZgIiQSqIilAoiICIiAhREH//Z" alt="Team Member" class="w-32 h-32 mx-auto rounded-full">
-                    <h3 class="text-xl font-semibold mt-4 text-gray-800">John Doe</h3>
-                    <p class="text-gray-600">CEO & Founder</p>
-                    <div class="flex justify-center space-x-4 mt-4">
-                        <a href="#" class="text-blue-600 hover:text-blue-800 text-xl"><i class="ri-facebook-fill"></i></a>
-                        <a href="#" class="text-blue-400 hover:text-blue-600 text-xl"><i class="ri-twitter-fill"></i></a>
-                        <a href="#" class="text-gray-800 hover:text-black text-xl"><i class="ri-github-fill"></i></a>
-                    </div>
-                </div>
+    <section class="bg-gray-100 py-16 px-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-4xl font-extrabold text-red-600">About Us</h2>
+                <h3 class="text-2xl font-light text-gray-700 mt-2">Welcome to Europa Olympiad</h3>
+                <p class="text-gray-700 mt-6 leading-relaxed">
+                    All activities of the Foundation invariably aim at making learning an interesting and interactive
+                    process in which the learner is actually able to put his / her skills, memory, talent and knowledge to
+                    test.
+                </p>
+                <p class="text-gray-700 mt-6 leading-relaxed">
+                    For this, the Foundation conducts workshops, seminars and science/IT, humanities competitions for
+                    students of different classes and age groups.
+                </p>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="{{ asset('https://cdn.pixabay.com/photo/2016/04/27/06/51/businessman-1356063_1280.jpg') }}"
+                    alt="Europa Olympiad Students"
+                    class="rounded-lg shadow-2xl transform hover:scale-105 transition duration-300">
+            </div>
+        </div>
+    </section>
 
-                <!-- Team Member 2 -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-32 h-32 mx-auto rounded-full">
-                    <h3 class="text-xl font-semibold mt-4 text-gray-800">Jane Smith</h3>
-                    <p class="text-gray-600">Lead Developer</p>
-                    <div class="flex justify-center space-x-4 mt-4">
-                        <a href="#" class="text-blue-600 hover:text-blue-800 text-xl"><i class="ri-facebook-fill"></i></a>
-                        <a href="#" class="text-blue-400 hover:text-blue-600 text-xl"><i class="ri-twitter-fill"></i></a>
-                        <a href="#" class="text-gray-800 hover:text-black text-xl"><i class="ri-github-fill"></i></a>
-                    </div>
-                </div>
+    <section class="bg-blue-50 py-16 px-6">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Heading -->
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl text-red-600 font-semibold uppercase tracking-widest">
+                    Why Choose Us?
+                </h2>
+            </div>
 
-                <!-- Team Member 3 -->
-                <div class="bg-white rounded-lg shadow-lg p-6">
-                    <img src="data:image/jpeg;base64,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" alt="Team Member" class="w-32 h-32 mx-auto rounded-full">
-                    <h3 class="text-xl font-semibold mt-4 text-gray-800">Emily Johnson</h3>
-                    <p class="text-gray-600">Marketing Manager</p>
-                    <div class="flex justify-center space-x-4 mt-4">
-                        <a href="#" class="text-blue-600 hover:text-blue-800 text-xl"><i class="ri-facebook-fill"></i></a>
-                        <a href="#" class="text-blue-400 hover:text-blue-600 text-xl"><i class="ri-twitter-fill"></i></a>
-                        <a href="#" class="text-gray-800 hover:text-black text-xl"><i class="ri-github-fill"></i></a>
-                    </div>
-                </div>
+            <!-- Subheading and List -->
+            <div class="max-w-3xl mx-auto text-center">
+                <h3 class="text-xl md:text-2xl font-bold text-gray-800">
+                    The foundation conducts the following Olympiads:
+                </h3>
+                <ul class="list-decimal list-inside text-gray-700 mt-6 text-left md:text-lg leading-relaxed">
+                    <li>International Aptitude Olympiad (IAO)</li>
+                    <li>International Science Olympiad (ISO)</li>
+                    <li>International Mathematics Olympiad (IMO)</li>
+                    <li>International General Knowledge Olympiad (IGKO)</li>
+                </ul>
             </div>
         </div>
     </section>
 
 
-<script>
-    const slider = document.getElementById("testimonial-slider");
-    const prev = document.getElementById("prev");
-    const next = document.getElementById("next");
-    let index = 0;
-    function showSlide(direction) {
-        const slides = slider.children.length;
-        index = (index + direction + slides) % slides;
-        slider.style.transform = `translateX(-${index * 100}%)`;
-    }
-    prev.addEventListener("click", () => showSlide(-1));
-    next.addEventListener("click", () => showSlide(1));
-</script>
+    <section class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <!-- Heading -->
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-extrabold text-gray-800 uppercase">Contact Us</h2>
+                <p class="text-gray-600 mt-2">EUROPA OLYMPIAD LEAGUES PRIVATE LIMITED</p>
+            </div>
+
+            <!-- Grid Content -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Address -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Office Address</h3>
+                    <p class="text-gray-600">K-38, Keshavpuram, Avas Vikas, Kalyanpur</p>
+                    <p class="text-gray-600">Kanpur - 208017 [U.P.] India</p>
+                    <p class="mt-4 text-gray-600"><span class="font-medium">Working Days:</span> Monday – Saturday</p>
+                    <p class="text-gray-600">9:00 AM - 6:00 PM</p>
+                    <p class="text-gray-500 italic mt-1">All Sundays Off</p>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Contact Information</h3>
+                    <p class="text-gray-600"><span class="font-medium">Email:</span> <a
+                            href="mailto:info@europaolympiad.com"
+                            class="text-blue-600 hover:underline">info@europaolympiad.com</a></p>
+                    <p class="text-gray-600 mt-2"><span class="font-medium">Mobile:</span> <a href="tel:+911234567890"
+                            class="text-blue-600 hover:underline">+91 12345 67890</a></p>
+                </div>
+
+                <!-- Social & Quick Links -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Follow Us</h3>
+                    <!-- Social Media Icons -->
+                    <div class="flex space-x-4">
+                        <a href="#" class="hover:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 48 48">
+                                <path fill="#fff"
+                                    d="M4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98c-0.001,0,0,0,0,0h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M4.868,43.803c-0.132,0-0.26-0.052-0.355-0.148c-0.125-0.127-0.174-0.312-0.127-0.483l2.639-9.636c-1.636-2.906-2.499-6.206-2.497-9.556C4.532,13.238,13.273,4.5,24.014,4.5c5.21,0.002,10.105,2.031,13.784,5.713c3.679,3.683,5.704,8.577,5.702,13.781c-0.004,10.741-8.746,19.48-19.486,19.48c-3.189-0.001-6.344-0.788-9.144-2.277l-9.875,2.589C4.953,43.798,4.911,43.803,4.868,43.803z">
+                                </path>
+                                <path fill="#cfd8dc"
+                                    d="M24.014,5c5.079,0.002,9.845,1.979,13.43,5.566c3.584,3.588,5.558,8.356,5.556,13.428c-0.004,10.465-8.522,18.98-18.986,18.98h-0.008c-3.177-0.001-6.3-0.798-9.073-2.311L4.868,43.303l2.694-9.835C5.9,30.59,5.026,27.324,5.027,23.979C5.032,13.514,13.548,5,24.014,5 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974C24.014,42.974,24.014,42.974,24.014,42.974 M24.014,4C24.014,4,24.014,4,24.014,4C12.998,4,4.032,12.962,4.027,23.979c-0.001,3.367,0.849,6.685,2.461,9.622l-2.585,9.439c-0.094,0.345,0.002,0.713,0.254,0.967c0.19,0.192,0.447,0.297,0.711,0.297c0.085,0,0.17-0.011,0.254-0.033l9.687-2.54c2.828,1.468,5.998,2.243,9.197,2.244c11.024,0,19.99-8.963,19.995-19.98c0.002-5.339-2.075-10.359-5.848-14.135C34.378,6.083,29.357,4.002,24.014,4L24.014,4z">
+                                </path>
+                                <path fill="#40c351"
+                                    d="M35.176,12.832c-2.98-2.982-6.941-4.625-11.157-4.626c-8.704,0-15.783,7.076-15.787,15.774c-0.001,2.981,0.833,5.883,2.413,8.396l0.376,0.597l-1.595,5.821l5.973-1.566l0.577,0.342c2.422,1.438,5.2,2.198,8.032,2.199h0.006c8.698,0,15.777-7.077,15.78-15.776C39.795,19.778,38.156,15.814,35.176,12.832z">
+                                </path>
+                                <path fill="#fff" fill-rule="evenodd"
+                                    d="M19.268,16.045c-0.355-0.79-0.729-0.806-1.068-0.82c-0.277-0.012-0.593-0.011-0.909-0.011c-0.316,0-0.83,0.119-1.265,0.594c-0.435,0.475-1.661,1.622-1.661,3.956c0,2.334,1.7,4.59,1.937,4.906c0.237,0.316,3.282,5.259,8.104,7.161c4.007,1.58,4.823,1.266,5.693,1.187c0.87-0.079,2.807-1.147,3.202-2.255c0.395-1.108,0.395-2.057,0.277-2.255c-0.119-0.198-0.435-0.316-0.909-0.554s-2.807-1.385-3.242-1.543c-0.435-0.158-0.751-0.237-1.068,0.238c-0.316,0.474-1.225,1.543-1.502,1.859c-0.277,0.317-0.554,0.357-1.028,0.119c-0.474-0.238-2.002-0.738-3.815-2.354c-1.41-1.257-2.362-2.81-2.639-3.285c-0.277-0.474-0.03-0.731,0.208-0.968c0.213-0.213,0.474-0.554,0.712-0.831c0.237-0.277,0.316-0.475,0.474-0.791c0.158-0.317,0.079-0.594-0.04-0.831C20.612,19.329,19.69,16.983,19.268,16.045z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <a href="https://europaolympiad.com/gallery/" class="hover:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 48 48">
+                                <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615"
+                                    y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#2aa4f4"></stop>
+                                    <stop offset="1" stop-color="#007ad9"></stop>
+                                </linearGradient>
+                                <path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)"
+                                    d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path>
+                                <path fill="#fff"
+                                    d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 48 48">
+                                <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035"
+                                    r="44.899" gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#fd5"></stop>
+                                    <stop offset=".328" stop-color="#ff543f"></stop>
+                                    <stop offset=".348" stop-color="#fc5245"></stop>
+                                    <stop offset=".504" stop-color="#e64771"></stop>
+                                    <stop offset=".643" stop-color="#d53e91"></stop>
+                                    <stop offset=".761" stop-color="#cc39a4"></stop>
+                                    <stop offset=".841" stop-color="#c837ab"></stop>
+                                </radialGradient>
+                                <path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)"
+                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                </path>
+                                <radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786"
+                                    cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop offset="0" stop-color="#4168c9"></stop>
+                                    <stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop>
+                                </radialGradient>
+                                <path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)"
+                                    d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z">
+                                </path>
+                                <path fill="#fff"
+                                    d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z">
+                                </path>
+                                <circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle>
+                                <path fill="#fff"
+                                    d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="#" class="hover:text-gray-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30"
+                                viewBox="0 0 50 50">
+                                <path
+                                    d="M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <h4 class="text-lg font-semibold text-gray-700 mt-4 mb-2">Quick Links</h4>
+                    <ul class="space-y-1 text-gray-600">
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Exam Schedule</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Results (2023-24)</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Syllabus</a></li>
+                        <li><a href="#" class="hover:text-blue-700 hover:underline">Award & Prizes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Font Awesome CDN for Icons -->
+    <script src="https://kit.fontawesome.com/a2e0e6ad59.js" crossorigin="anonymous"></script>
 @endsection
