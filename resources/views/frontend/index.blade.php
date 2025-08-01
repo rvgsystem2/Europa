@@ -4,19 +4,19 @@
     <div class="max-w-full mx-auto">
         <section id="carousel" class="relative overflow-hidden">
             <!-- Carousel Wrapper -->
-            <div class="relative lg:h-[68vh] h-[20vh] md:h-[50vh] xl:h-[68vh] lg:w-full w-auto">
+            <div class="relative lg:h-[68vh] h-[18vh] md:h-[50vh] xl:h-[68vh] lg:w-full w-auto">
                 <!-- Slides -->
                 <div class="absolute inset-0 transition-opacity duration-700 ease-in-out active" data-carousel-item>
                     <img src="{{ asset('asset/img/Webside_Front_Page_1.jpg') }}"
-                        class="object-cover object-center object-fit h-auto w-auto" alt="First Slide">
+                        class="w-full h-full object-cover object-center" alt="First Slide">
                 </div>
                 <div class="absolute inset-0 hidden transition-opacity duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ asset('asset/img/Webside_Front_Page_2.jpg') }}"
-                        class="object-cover object-center h-auto w-auto" alt="Second Slide">
+                        class="w-full h-full object-cover object-center" alt="Second Slide">
                 </div>
                 <div class="absolute inset-0 hidden transition-opacity duration-700 ease-in-out" data-carousel-item>
                     <img src="{{ asset('asset/img/Webside_Front_Page_3.jpg') }}"
-                        class="object-cover object-center h-auto w-auto" alt="Third Slide">
+                        class="w-full h-full object-cover object-center" alt="Third Slide">
                 </div>
             </div>
             <!-- Indicators -->
@@ -457,7 +457,7 @@
                 <div class="w-full lg:w-1/2 h-full">
                     <div class="relative rounded-xl overflow-hidden shadow-md h-full lg:min-h-[600px]">
                         <iframe
-                            class="absolute w-full h-full object-cover border-0"
+                            class="absolute  w-full h-full object-cover border-0"
                             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3570.7953924458748!2d80.279698!3d26.494532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3826d4ebf859%3A0xe9e2ed37cc371552!2sReal%20Victory%20Groups!5e0!3m2!1sen!2sin!4v1753942228185!5m2!1sen!2sin"
                             allowfullscreen
                             loading="lazy"
