@@ -7,6 +7,10 @@
     <title>Euro</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+
+    <link rel="icon" href="{{ asset('asset/img/logo-short.png') }}" type="image/x-icon">
+
+
     <link
     href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
     rel="stylesheet"

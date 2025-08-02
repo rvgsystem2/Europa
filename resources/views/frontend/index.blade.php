@@ -94,7 +94,7 @@
                     mind to new heights! ✨
                 </p>
                 <span>Stay curious. Stay brilliant.</span>
-                <p>Europa Olympiad Team</p>
+                <p class="font-bold">Europa Olympiad Team</p>
             </div>
         </div>
     </div>
@@ -277,7 +277,7 @@
     </div>
 
     {{-- EXAM BANNER --}}
-    <div class="flex justify-center items-center relative">
+    {{-- <div class="flex justify-center items-center relative">
         <!-- Background Image -->
         <img src="{{ asset('asset/img/G.K..png') }}" alt="IGKO Banner" class="w-full h-auto object-cover">
 
@@ -288,7 +288,57 @@
             </p>
             <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
         </div>
-    </div>
+    </div> --}}
+
+{{-- slider --}}
+<div class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-lg shadow-md">
+    <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+        <!-- Slide 1 -->
+        <div class="relative w-full flex-shrink-0">
+            <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-64 object-cover" alt="Slide 1">
+            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
+                    IGKO (International General Knowledge Olympiad)
+                </p>
+                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="relative w-full flex-shrink-0">
+            <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 2">
+            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
+                    IGKO (International Aptitude Olympiad)
+                </p>
+                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="relative w-full flex-shrink-0">
+            <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-64 object-cover" alt="Slide 3">
+            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
+                    IGKO (International Maths Olympiad)
+                </p>
+                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="relative w-full flex-shrink-0">
+            <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 4">
+            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
+                    IGKO (International Science Olympiad)
+                </p>
+                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            </div>
+        </div>
+       </div>
+</div>
+
 
 
 
@@ -301,22 +351,53 @@
     {{-- images --}}
     <div class="w-full bg-gray-100 py-8">
         <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 gap-6 px-4">
-            <div>
-                <img src="{{ asset('asset/img/single-parent.jpg') }}" alt="Single Parent"
-                    class="w-full h-64 object-cover rounded-lg shadow-md">
+            <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
+                <div class="overflow-hidden group">
+                    <img src="{{ asset('asset/img/single-parent.jpg') }}" alt="Single Parent"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        Single Parent
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="{{ asset('asset/img/guardian.jpg') }}" alt="Guardian"
-                    class="w-full h-64 object-cover rounded-lg shadow-md">
+
+            <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
+                <div class="overflow-hidden group">
+                    <img src="{{ asset('asset/img/guardian.jpg') }}" alt="Single Parent"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        Guardian
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="{{ asset('asset/img/staff-child.jpg') }}" alt="Staff Child"
-                    class="w-full h-64 object-cover rounded-lg shadow-md">
+            <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
+                <div class="overflow-hidden group">
+                    <img src="{{ asset('asset/img/staff-child.jpg') }}" alt="Single Parent"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        Staff Child
+                    </p>
+                </div>
             </div>
-            <div>
-                <img src="{{ asset('asset/img/handicap.jpg') }}" alt="Handicap"
-                    class="w-full h-64 object-cover rounded-lg shadow-md">
+
+            <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
+                <div class="overflow-hidden group">
+                    <img src="{{ asset('asset/img/handicap.jpg') }}" alt="Single Parent"
+                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                </div>
+                <div class="p-4">
+                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                       Handicap
+                    </p>
+                </div>
             </div>
+
         </div>
     </div>
 
@@ -955,5 +1036,36 @@
             updateCarousel(currentIndex);
             startAutoSlide();
         });
+    </script>
+
+    {{-- exam section slider --}}
+    <script>
+        const slider = document.getElementById("slider");
+        const slides = slider.children;
+        const slideWidth = slides[0].offsetWidth;
+        let index = 0;
+        let isResetting = false;
+
+        function autoplaySlider() {
+            if (isResetting) return;
+
+            index++;
+            slider.style.transition = 'transform 0.7s ease-in-out';
+            slider.style.transform = `translateX(-${index * slideWidth}px)`;
+
+            // Reset without animation if at the end of the clone
+            if (index === slides.length - 2) {
+                isResetting = true;
+                setTimeout(() => {
+                    slider.style.transition = 'none';
+                    slider.style.transform = `translateX(0px)`;
+                    index = 0;
+                    isResetting = false;
+                }, 700); // match transition duration
+            }
+        }
+
+        // Autoplay interval
+        setInterval(autoplaySlider, 3000);
     </script>
 @endsection

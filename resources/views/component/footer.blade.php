@@ -4,7 +4,7 @@
         <!-- Company Info & Newsletter -->
         <div class="md:col-span-2">
             <div class="flex items-center mb-6">
-                <img src="{{ asset('asset/img/Logo_Europa.jpg') }}" alt="Europa Olympiad Logo" class="h-12 w-auto mr-3">
+                <img src="{{ asset('asset/img/Logo_Europa-bg.png') }}" alt="Europa Olympiad Logo" class="h-12 w-auto mr-3">
             </div>
                 <div class="flex items-center mb-4">
 
@@ -57,16 +57,16 @@
           <ul class="space-y-2">
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
               <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-              Europa IGKO</a></li>
+              Europa (IGKO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
               <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-              Europa IAO</a></li>
+              Europa (IAO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
               <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-              Europa ISO</a></li>
+              Europa (ISO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
               <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
-              Europa IMO</a></li>
+              Europa (IMO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
               <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
               View All Olympiads</a></li>

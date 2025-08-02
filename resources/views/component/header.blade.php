@@ -44,7 +44,7 @@
 <nav class="bg-white text-black p-4">
     <div class="container mx-auto flex justify-between md:justify-evenly items-center">
         <a href="/" class="text-2xl font-bold ">
-            <img src="{{ asset('asset/img/Logo_Europa.jpg') }}" alt="" class="h-14 md:w-90 w-56 ">
+            <img src="{{ asset('asset/img/Logo_Europa.jpg') }}" alt="" class="h-14 md:w-68 w-56 ">
         </a>
         <button id="menu-btn" class="md:hidden focus:outline-none">
             <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
