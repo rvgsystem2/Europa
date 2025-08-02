@@ -53,6 +53,11 @@
 
                         </div>
                     </div>
+
+                    <!-- Notes -->
+                    <x-nav-link :href="route('notes.index')" :active="request()->routeIs('notes.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> Notes
+                    </x-nav-link>
                 </div>
             </div>
 
