@@ -31,38 +31,43 @@
 
             </h3>
 
-            <div class="grid grid-cols-1 gap-4 text-base md:text-lg text-gray-700">
-                <div class="flex flex-col sm:flex-row justify-evenly ">
-                    <p class="font-medium">Conducted for Grades</p>
-                    <span class="font-bold text-center ">-</span>
-                    <p class="text-right sm:text-left">1 to 10</p>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-evenly ">
-                    <p class="font-medium">Mode of Examination</p>
-                    <span class="font-bold text-center ">-</span>
-                    <p class="text-right sm:text-left">Offline</p>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-evenly ">
-                    <p class="font-medium">Mode of Registration</p>
-                    <span class="font-bold text-center ">-</span>
-                    <p class="text-right sm:text-left">Through Schools</p>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-evenly ">
-                    <p class="font-medium">EISO exam duration  </p>
-                    <span class="font-bold text-center ">-</span>
-                    <p class="text-right sm:text-left">For Grade 1 - 10: 60 minutes</p>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-evenly ">
-                    <p class="font-medium">Type of Questions </p>
-                    <span class="font-bold text-center ">-</span>
-                    <p class="text-right sm:text-left">Multiple Choice Questions (MCQs)</p>
-                </div>
-                <div class="flex flex-col sm:flex-row justify-evenly ">
-                    <p class="font-medium">Levels of Examination</p>
-                    <span class="font-bold text-center ">-</span>
-                    <p class="text-right sm:text-left">2 Level</p>
-                </div>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto border border-gray-300 text-gray-800 text-left text-sm md:text-base">
+                    <thead class="bg-gray-100 font-semibold">
+                        <tr>
+                            <th class="border px-4 py-2">Attribute</th>
+                            <th class="border px-4 py-2">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border px-4 py-2">Conducted for Grades</td>
+                            <td class="border px-4 py-2">1 to 10</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border px-4 py-2">Mode of Examination</td>
+                            <td class="border px-4 py-2">Offline</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border px-4 py-2">Mode of Registration</td>
+                            <td class="border px-4 py-2">Through Schools</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border px-4 py-2">EISO Exam Duration</td>
+                            <td class="border px-4 py-2">For Grade 1 - 10: 60 minutes</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border px-4 py-2">Type of Questions</td>
+                            <td class="border px-4 py-2">Multiple Choice Questions (MCQs)</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="border px-4 py-2">Levels of Examination</td>
+                            <td class="border px-4 py-2">2 Level</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
+
 
             <p class="text-gray-700 mt-8 text-base md:text-lg leading-relaxed">
                 Europa International Science Olympiad (EISO) is popularly known by students globally for serving exceptional quality questions and the exam is held

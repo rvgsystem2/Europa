@@ -119,91 +119,148 @@
                 <i class="ri-bar-chart-box-line mr-2"></i> News and Updates
             </div>
 
-            <!-- News Slider Container -->
-            <div id="news-slider" class="relative h-48 overflow-hidden flex-1">
-                <!-- Slide 1 -->
-                <div class="news-item absolute w-full transition-transform duration-500">
-                    <div class="flex items-start space-x-4 p-4">
-                        <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                            <p class="text-lg font-bold leading-tight">30</p>
-                            <p class="text-xs leading-none">May</p>
-                            <p class="text-xs leading-none">24</p>
+            <div class="relative h-96 sm:h-[32rem] overflow-hidden group border border-gray-300 rounded-lg shadow-lg">
+                <!-- Scrolling Content -->
+                <div class="absolute top-0 left-0 w-full animate-[scroll-up_30s_linear_infinite] group-hover:[animation-play-state:paused]">
+                    <div class="space-y-4">
+                        <!-- Slide 1 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">Oct</p>
+                                    <p class="text-xs leading-none">4</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
                         </div>
-                        <div class="text-gray-800 text-sm flex-1">
-                            <p class="font-semibold">Summer Vacation - 2024-25</p>
-                            <p>IX-XII Summer Vacation - 2024-25</p>
-                        </div>
-                        <i class="ri-attachment-2 text-gray-500"></i>
-                    </div>
-                </div>
-                <!-- Slide 1 -->
-                <div class="news-item absolute w-full transition-transform duration-500">
-                    <div class="flex items-start space-x-4 p-4">
-                        <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                            <p class="text-lg font-bold leading-tight">30</p>
-                            <p class="text-xs leading-none">May</p>
-                            <p class="text-xs leading-none">24</p>
-                        </div>
-                        <div class="text-gray-800 text-sm flex-1">
-                            <p class="font-semibold">Summer Vacation - 2024-25</p>
-                            <p>IX-XII Summer Vacation - 2024-25</p>
-                        </div>
-                        <i class="ri-attachment-2 text-gray-500"></i>
-                    </div>
-                </div>
-                <!-- Slide 1 -->
-                <div class="news-item absolute w-full transition-transform duration-500">
-                    <div class="flex items-start space-x-4 p-4">
-                        <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                            <p class="text-lg font-bold leading-tight">30</p>
-                            <p class="text-xs leading-none">May</p>
-                            <p class="text-xs leading-none">24</p>
-                        </div>
-                        <div class="text-gray-800 text-sm flex-1">
-                            <p class="font-semibold">Summer Vacation - 2024-25</p>
-                            <p>IX-XII Summer Vacation - 2024-25</p>
-                        </div>
-                        <i class="ri-attachment-2 text-gray-500"></i>
-                    </div>
-                </div>
-                <!-- Slide 2 -->
-                <div class="news-item absolute w-full transition-transform duration-500 ">
-                    <div class="flex items-start space-x-4 p-4">
-                        <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                            <p class="text-lg font-bold leading-tight">25</p>
-                            <p class="text-xs leading-none">May</p>
-                            <p class="text-xs leading-none">24</p>
-                        </div>
-                        <div class="text-gray-800 text-sm flex-1">
-                            <p class="font-semibold">Class IV - 3rd Language Syllabus</p>
-                            <p>Dear Parents, Kindly find the attached PDF for your ward. Regards, Class Teacher.</p>
-                        </div>
-                        <i class="ri-attachment-2 text-gray-500"></i>
-                    </div>
-                </div>
 
+                        <!-- Slide 2 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">May</p>
+                                    <p class="text-xs leading-none">24</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
+                        </div>
 
+                        <!-- Slide 3 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">Feb</p>
+                                    <p class="text-xs leading-none">4</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">Jan</p>
+                                    <p class="text-xs leading-none">4</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 5 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">May</p>
+                                    <p class="text-xs leading-none">24</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 6 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">June</p>
+                                    <p class="text-xs leading-none">2</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
+                        </div>
+
+                        <!-- Slide 7 -->
+                        <div class="p-4 bg-white border-b">
+                            <div class="flex items-start space-x-4 p-4">
+                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                    <p class="text-lg font-bold leading-tight">30</p>
+                                    <p class="text-xs leading-none">March</p>
+                                    <p class="text-xs leading-none">4</p>
+                                </div>
+                                <div class="text-gray-800 text-sm flex-1">
+                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
+                                    <p>IX-XII Summer Vacation - 2024-25</p>
+                                </div>
+                                <i class="ri-attachment-2 text-gray-500"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <!-- Navigation Buttons -->
-            <div class="flex justify-between p-4 border-t">
-                <button onclick="prevSlide()" class="bg-gray-100 hover:bg-gray-200 p-2 rounded-md transition">
-                    <i class="ri-arrow-up-s-line text-lg"></i>
-                </button>
-                <button onclick="nextSlide()" class="bg-gray-100 hover:bg-gray-200 p-2 rounded-md transition">
+            <!-- Custom animation style -->
+            <style>
+                @keyframes scroll-up {
+                    0% {
+                        transform: translateY(0%);
+                    }
 
-                    <i class="ri-arrow-down-s-line text-lg"></i>
-                </button>
-            </div>
+                    100% {
+                        transform: translateY(-50%);
+                    }
+                }
+            </style>
+
+
         </div>
 
         <!-- News Image Section -->
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src="{{asset('asset/img/image.jpg')}}"
-                alt="News Image" class="w-auto h-auto object-cover object-center">
-                <p class="text-xl font-bold text-center pt-12 px-2">"You were born to be a player.
-                    You were meant to be here.
-                    This moment is yours."</p>
+            <img src="{{ asset('asset/img/image.jpg') }}" alt="News Image"
+                class="w-auto h-auto object-cover object-center">
+            <p class="text-xl font-bold text-center pt-12 px-2">"You were born to be a player.
+                You were meant to be here.
+                This moment is yours."</p>
         </div>
 
         <!-- Right Decorative Image -->
@@ -213,94 +270,96 @@
         </div>
     </div>
 
-{{-- Exams Plate (Session 2025 - 26) --}}
-<div class="flex justify-center py-6">
-    <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">Exams Plate (Session 2025 - 26)</h1>
-</div>
-
-{{-- EXAM BANNER --}}
-<div class="flex justify-center items-center relative">
-    <!-- Background Image -->
-    <img src="{{ asset('asset/img/G.K..png') }}" alt="IGKO Banner" class="w-full h-auto object-cover">
-
-    <!-- Overlay with Text -->
-    <div class="absolute inset-0 p-6 flex flex-col items-center justify-center text-center px-4 z-10">
-        <p class="text-black text-md lg:text-3xl md:text-2xl  font-bold">
-            IGKO (International General Knowledge Olympiad)
-        </p>
-        <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+    {{-- Exams Plate (Session 2025 - 26) --}}
+    <div class="flex justify-center py-6">
+        <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">Exams Plate (Session
+            2025 - 26)</h1>
     </div>
-</div>
 
+    {{-- EXAM BANNER --}}
+    <div class="flex justify-center items-center relative">
+        <!-- Background Image -->
+        <img src="{{ asset('asset/img/G.K..png') }}" alt="IGKO Banner" class="w-full h-auto object-cover">
 
-
-
-{{-- FREE FOR STUDENTS WHO ARE --}}
-<div class="flex justify-center py-6">
-    <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">FREE FOR STUDENTS WHO ARE</h1>
-</div>
-{{-- images --}}
-<div class="w-full bg-gray-100 py-8">
-    <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 gap-6 px-4">
-        <div>
-            <img src="{{ asset('asset/img/single-parent.jpg') }}" alt="Single Parent"
-                class="w-full h-64 object-cover rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="{{ asset('asset/img/guardian.jpg') }}" alt="Guardian"
-                class="w-full h-64 object-cover rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="{{ asset('asset/img/staff-child.jpg') }}" alt="Staff Child"
-                class="w-full h-64 object-cover rounded-lg shadow-md">
-        </div>
-        <div>
-            <img src="{{ asset('asset/img/handicap.jpg') }}" alt="Handicap"
-                class="w-full h-64 object-cover rounded-lg shadow-md">
+        <!-- Overlay with Text -->
+        <div class="absolute inset-0 p-6 flex flex-col items-center justify-center text-center px-4 z-10">
+            <p class="text-black text-md lg:text-3xl md:text-2xl  font-bold">
+                IGKO (International General Knowledge Olympiad)
+            </p>
+            <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
         </div>
     </div>
-</div>
 
 
-{{-- ABOUT US --}}
-<!-- Section Title -->
-<div class="flex justify-center lg:py-6">
-    <h1 class="bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">
-        ABOUT US
-    </h1>
-</div>
 
-<!-- About Content Section -->
-<div class="bg-white w-full px-4 py-8">
-    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
 
-        <!-- Text Content -->
-        <div class="md:w-1/2">
-            <h2 class="md:text-3xl text-lg font-semibold mb-4 text-red-700">
-                Welcome to Europa Olympiad
-            </h2>
-            <p class="text-gray-700 text-sm md:text-xl leading-relaxed">
-                Europa Olympiad Foundation is a registered organization established by the Government
-                of India in 2023 by leading educationists and national-level social workers. Our mission is to
-                provide students with international-level education and examinations.
+    {{-- FREE FOR STUDENTS WHO ARE --}}
+    <div class="flex justify-center py-6">
+        <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">FREE FOR STUDENTS WHO
+            ARE</h1>
+    </div>
+    {{-- images --}}
+    <div class="w-full bg-gray-100 py-8">
+        <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 gap-6 px-4">
+            <div>
+                <img src="{{ asset('asset/img/single-parent.jpg') }}" alt="Single Parent"
+                    class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+            <div>
+                <img src="{{ asset('asset/img/guardian.jpg') }}" alt="Guardian"
+                    class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+            <div>
+                <img src="{{ asset('asset/img/staff-child.jpg') }}" alt="Staff Child"
+                    class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+            <div>
+                <img src="{{ asset('asset/img/handicap.jpg') }}" alt="Handicap"
+                    class="w-full h-64 object-cover rounded-lg shadow-md">
+            </div>
+        </div>
+    </div>
+
+
+    {{-- ABOUT US --}}
+    <!-- Section Title -->
+    <div class="flex justify-center lg:py-6">
+        <h1 class="bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">
+            ABOUT US
+        </h1>
+    </div>
+
+    <!-- About Content Section -->
+    <div class="bg-white w-full px-4 py-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+
+            <!-- Text Content -->
+            <div class="md:w-1/2">
+                <h2 class="md:text-3xl text-lg font-semibold mb-4 text-red-700">
+                    Welcome to Europa Olympiad
+                </h2>
+                <p class="text-gray-700 text-sm md:text-xl leading-relaxed">
+                    Europa Olympiad Foundation is a registered organization established by the Government
+                    of India in 2023 by leading educationists and national-level social workers. Our mission is to
+                    provide students with international-level education and examinations.
+                </p>
+            </div>
+
+            <!-- Image -->
+            <div class="md:w-1/2">
+                <img src="{{ asset('asset/img/team-worl.jpg') }}" alt="Our Team"
+                    class="w-auto h-auto rounded-lg shadow-md object-cover">
+            </div>
+        </div>
+
+        <!-- Paragraph Below Image -->
+        <div class="max-w-5xl mx-auto mt-6 text-gray-700 text-sm md:text-xl leading-relaxed px-2">
+            <p>
+                All our activities aim to make learning an interactive and engaging process where
+                students can apply their skills, memory, and knowledge effectively.
             </p>
         </div>
-
-        <!-- Image -->
-        <div class="md:w-1/2">
-            <img src="{{ asset('asset/img/team-worl.jpg') }}" alt="Our Team"
-                class="w-auto h-auto rounded-lg shadow-md object-cover">
-        </div>
     </div>
-
-    <!-- Paragraph Below Image -->
-    <div class="max-w-5xl mx-auto mt-6 text-gray-700 text-sm md:text-xl leading-relaxed px-2">
-        <p>
-            All our activities aim to make learning an interactive and engaging process where
-            students can apply their skills, memory, and knowledge effectively.
-        </p>
-    </div>
-</div>
 
 
 
@@ -385,154 +444,139 @@
     </div> --}}
 
 
-{{-- CONTACT FORM SECTION --}}
+    {{-- CONTACT FORM SECTION --}}
 
-<section class="relative w-full min-h-screen py-12 px-4 sm:px-6 lg:px-8">
-    <!-- Background Image with overlay -->
-    <div class="absolute inset-0 z-0">
-        <img src="{{ asset('asset/img/phone.jpg') }}" alt="Contact Background"
-             class="w-full h-full object-cover object-center">
-        <div class="absolute inset-0 bg-black/30"></div>
-    </div>
-
-    <!-- Main Content Container -->
-    <div class="relative z-10 max-w-7xl mx-auto">
-        <div class="flex justify-center lg:py-6">
-            <h1 class=" py-3 text-center text-white text-xl md:text-3xl md:text-4xl font-bold w-full">
-               Contact us
-            </h1>
+    <section class="relative w-full min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+        <!-- Background Image with overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="{{ asset('asset/img/phone.jpg') }}" alt="Contact Background"
+                class="w-full h-full object-cover object-center">
+            <div class="absolute inset-0 bg-black/30"></div>
         </div>
-        <!-- Content Box -->
-        <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl overflow-hidden my-8 md:my-12 lg:my-16">
-            <!-- Contact Info Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 sm:p-8">
-                <!-- Address Card -->
-                <div class="flex flex-col sm:flex-row items-start gap-4 p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-red-50 p-3 rounded-full">
-                        <i class="ri-map-pin-fill text-2xl text-red-600"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Our Location</h3>
-                        <address class="text-sm text-gray-600 not-italic">
-                            K-38, Keshavpuram, Awas Vikas,<br>
-                            Kalyanpur, Kanpur (U.P) 208017
-                        </address>
-                    </div>
-                </div>
 
-                <!-- Phone Card -->
-                <div class="flex flex-col sm:flex-row items-start gap-4 p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-blue-50 p-3 rounded-full">
-                        <i class="ri-phone-fill text-2xl text-blue-600"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
-                        <p class="text-sm text-gray-600">
-                            <a href="tel:+919876543210" class="hover:text-blue-600 transition-colors">
-                                +91 98765 43210
-                            </a>
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Email Card -->
-                <div class="flex flex-col sm:flex-row items-start gap-4 p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                    <div class="bg-green-50 p-3 rounded-full">
-                        <i class="ri-mail-fill text-2xl text-green-600"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold text-gray-900 mb-1">Email</h3>
-                        <p class="text-sm text-gray-600">
-                            <a href="mailto:info@realvictorygroups.com" class="hover:text-green-600 transition-colors">
-                                info@realvictorygroups.com
-                            </a>
-                        </p>
-                    </div>
-                </div>
+        <!-- Main Content Container -->
+        <div class="relative z-10 max-w-7xl mx-auto">
+            <div class="flex justify-center lg:py-6">
+                <h1 class=" py-3 text-center text-white text-xl md:text-3xl md:text-4xl font-bold w-full">
+                    Contact us
+                </h1>
             </div>
+            <!-- Content Box -->
+            <div class="bg-white/90 backdrop-blur-sm rounded-xl shadow-2xl overflow-hidden my-8 md:my-12 lg:my-16">
+                <!-- Contact Info Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6 sm:p-8">
+                    <!-- Address Card -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start gap-4 p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="bg-red-50 p-3 rounded-full">
+                            <i class="ri-map-pin-fill text-2xl text-red-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Our Location</h3>
+                            <address class="text-sm text-gray-600 not-italic">
+                                K-38, Keshavpuram, Awas Vikas,<br>
+                                Kalyanpur, Kanpur (U.P) 208017
+                            </address>
+                        </div>
+                    </div>
 
-            <!-- Map & Form Section -->
-            <div class="flex flex-col lg:flex-row gap-8 p-6 sm:p-8">
-                <!-- Google Map -->
-                <div class="w-full lg:w-1/2 h-full">
-                    <div class="relative rounded-xl overflow-hidden shadow-md h-full lg:min-h-[600px]">
-                        <iframe
-                            class="absolute  w-full h-full object-cover border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3570.7953924458748!2d80.279698!3d26.494532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3826d4ebf859%3A0xe9e2ed37cc371552!2sReal%20Victory%20Groups!5e0!3m2!1sen!2sin!4v1753942228185!5m2!1sen!2sin"
-                            allowfullscreen
-                            loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"
-                            aria-label="Google Maps location of Real Victory Groups">
-                        </iframe>
+                    <!-- Phone Card -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start gap-4 p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="bg-blue-50 p-3 rounded-full">
+                            <i class="ri-phone-fill text-2xl text-blue-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
+                            <p class="text-sm text-gray-600">
+                                <a href="tel:+919876543210" class="hover:text-blue-600 transition-colors">
+                                    +91 98765 43210
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Email Card -->
+                    <div
+                        class="flex flex-col sm:flex-row items-start gap-4 p-5 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                        <div class="bg-green-50 p-3 rounded-full">
+                            <i class="ri-mail-fill text-2xl text-green-600"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-semibold text-gray-900 mb-1">Email</h3>
+                            <p class="text-sm text-gray-600">
+                                <a href="mailto:info@realvictorygroups.com"
+                                    class="hover:text-green-600 transition-colors">
+                                    info@realvictorygroups.com
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
-                <div class="w-full lg:w-1/2">
-                    <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md h-full">
-                        <h2 class="text-2xl font-bold mb-6 text-gray-800">Connect With Us</h2>
-                        <form class="space-y-4" method="POST" action="#">
-                            @csrf
+                <!-- Map & Form Section -->
+                <div class="flex flex-col lg:flex-row gap-8 p-6 sm:p-8">
+                    <!-- Google Map -->
+                    <div class="w-full lg:w-1/2 h-full">
+                        <div class="relative rounded-xl overflow-hidden shadow-md h-full lg:min-h-[600px]">
+                            <iframe class="absolute  w-full h-full object-cover border-0"
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3570.7953924458748!2d80.279698!3d26.494532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3826d4ebf859%3A0xe9e2ed37cc371552!2sReal%20Victory%20Groups!5e0!3m2!1sen!2sin!4v1753942228185!5m2!1sen!2sin"
+                                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                                aria-label="Google Maps location of Real Victory Groups">
+                            </iframe>
+                        </div>
+                    </div>
 
-                            <!-- Name Field -->
-                            <div>
-                                <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
-                                    Full Name <span class="text-red-500">*</span>
-                                </label>
-                                <input
-                                    type="text"
-                                    id="name"
-                                    name="name"
-                                    placeholder="Enter your name"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                    required
-                                >
-                            </div>
+                    <!-- Contact Form -->
+                    <div class="w-full lg:w-1/2">
+                        <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md h-full">
+                            <h2 class="text-2xl font-bold mb-6 text-gray-800">Connect With Us</h2>
+                            <form class="space-y-4" method="POST" action="#">
+                                @csrf
 
-                            <!-- Email Field -->
-                            <div>
-                                <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
-                                    Email Address <span class="text-red-500">*</span>
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    placeholder="your.email@example.com"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                    required
-                                >
-                            </div>
+                                <!-- Name Field -->
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                                        Full Name <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="text" id="name" name="name" placeholder="Enter your name"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                                        required>
+                                </div>
 
-                            <!-- Message Field -->
-                            <div>
-                                <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
-                                    Your Message <span class="text-red-500">*</span>
-                                </label>
-                                <textarea
-                                    id="message"
-                                    name="message"
-                                    rows="4"
-                                    placeholder="How can we help you?"
-                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                    required
-                                ></textarea>
-                            </div>
+                                <!-- Email Field -->
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                                        Email Address <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="email" id="email" name="email"
+                                        placeholder="your.email@example.com"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                                        required>
+                                </div>
 
-                            <!-- Submit Button -->
-                            <button
-                                type="submit"
-                                class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                            >
-                                Send Message
-                            </button>
-                        </form>
+                                <!-- Message Field -->
+                                <div>
+                                    <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                                        Your Message <span class="text-red-500">*</span>
+                                    </label>
+                                    <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                                        required></textarea>
+                                </div>
+
+                                <!-- Submit Button -->
+                                <button type="submit"
+                                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -841,29 +885,6 @@
     </script>
 
 
-    {{-- news and letters script --}}
-    <script>
-        let currentIndex = 0;
-        const newsItems = document.querySelectorAll('.news-item');
-
-        function showSlide(index) {
-            newsItems.forEach((item, i) => {
-                item.style.transform = `translateY(${(i - index) * 100}%)`;
-            });
-        }
-
-        function nextSlide() {
-            currentIndex = (currentIndex + 1) % newsItems.length;
-            showSlide(currentIndex);
-        }
-
-        function prevSlide() {
-            currentIndex = (currentIndex - 1 + newsItems.length) % newsItems.length;
-            showSlide(currentIndex);
-        }
-
-        showSlide(currentIndex);
-    </script>
 
     {{-- banner script --}}
     <script>
