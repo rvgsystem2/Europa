@@ -266,7 +266,7 @@
                     <p class=" md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International General Knowledge Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
@@ -277,7 +277,7 @@
                     <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International Aptitude Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
@@ -288,7 +288,7 @@
                     <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International Maths Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
@@ -299,7 +299,7 @@
                     <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International Science Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
         </div>
