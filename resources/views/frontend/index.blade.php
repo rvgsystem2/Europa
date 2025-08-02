@@ -52,7 +52,7 @@
     <div class="bg-white px-4 sm:px-6 lg:px-24 py-12">
         <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-start">
             <!-- Left Section: Image & Overview -->
-            <div class="w-full md:w-1/2">
+            <div class="w-full md:w-[500px]">
                 <img src="{{ asset('asset/img/about.jpg') }}" alt="Principal Image"
                     class="w-full h-auto ">
 
@@ -99,7 +99,7 @@
             <div class="bg-white ">
                 {{-- <h3 class="text-2xl font-bold text-red-700 border-b pb-2 mb-4">Exam Details (Paper-based - Through School)</h3>
              --}}
-                <ul class="list-disc list-inside text-sm space-y-1 text-gray-700">
+                <ul class="list-disc list-inside text-base space-y-1 text-gray-700">
                     <li>
                         The Europa International Olympiad paper-based is an advanced test that challenges students
                         to apply their learning and thinking by answering stimulating questions, which are not
@@ -199,7 +199,7 @@
                             </div>
                         </div> --}}
 
-                       
+
                     </div>
                 </div>
             </div>
@@ -261,7 +261,7 @@
         <div id="slider" class="flex transition-transform duration-700 ease-in-out">
             <!-- Slide 1 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-64 object-cover" alt="Slide 1">
+                <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-96 object-cover" alt="Slide 1">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
                     <p class=" md:w-96 text-black text-md lg:text-xl md:text-xl font-bold">
                         IGKO (International General Knowledge Olympiad)
@@ -272,7 +272,7 @@
 
             <!-- Slide 2 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 2">
+                <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-96 object-cover" alt="Slide 2">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
                     <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
                         IGKO (International Aptitude Olympiad)
@@ -283,7 +283,7 @@
 
             <!-- Slide 3 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-64 object-cover" alt="Slide 3">
+                <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-96 object-cover" alt="Slide 3">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
                     <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
                         IGKO (International Maths Olympiad)
@@ -294,7 +294,7 @@
 
             <!-- Slide 4 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 4">
+                <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-96 object-cover" alt="Slide 4">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
                     <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
                         IGKO (International Science Olympiad)
@@ -319,7 +319,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-4 gap-6 px-4">
             <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
                 <div class="overflow-hidden group">
-                    <img src="{{ asset('asset/img/single-parent.jpg') }}" alt="Single Parent"
+                    <img src="{{ asset('asset/img/mother.jpg') }}" alt="Single Parent"
                         class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
@@ -332,7 +332,7 @@
 
             <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
                 <div class="overflow-hidden group">
-                    <img src="{{ asset('https://cdn.pixabay.com/photo/2021/09/06/04/24/grandparents-6600799_1280.jpg') }}" alt="Single Parent"
+                    <img src="{{ asset('asset/img/guardian.jpg') }}" alt="Single Parent"
                         class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
@@ -388,7 +388,7 @@
     </div>
 </div>
 <div>
-    <img src="{{asset('asset/img/ho-work.jpg')}}" alt="" class="w-full h-auto object-cover lg:mt-6">
+    <img src="{{asset('asset/img/ho-work.jpg')}}" alt="" class="w-full h-auto object-cover  p-4">
 </div>
     {{-- ABOUT US --}}
     <!-- Section Title -->
@@ -576,7 +576,7 @@
                             <p class="text-sm text-gray-600">
                                 <a href="mailto:info@realvictorygroups.com"
                                     class="hover:text-green-600 transition-colors">
-                                    info@realvictorygroups.com
+                                    info@europaolympiad.org
                                 </a>
                             </p>
                         </div>
@@ -624,6 +624,15 @@
                                         required>
                                 </div>
 
+                                  <!-- Number -->
+                                  <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                                        Contact no. <span class="text-red-500">*</span>
+                                    </label>
+                                    <input type="number" id="number" name="number" placeholder="Enter your number"
+                                        class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
+                                        required>
+                                </div>
                                 <!-- Message Field -->
                                 <div>
                                     <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
