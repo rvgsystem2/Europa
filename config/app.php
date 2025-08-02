@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'name' => env('Qr Wale', 'Real Victory Groups'),
+    'name' => env('APP_NAME', 'Europa'),
 
     /*
     |--------------------------------------------------------------------------

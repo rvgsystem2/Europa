@@ -2,13 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Note;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
     public function index(){
-        
-        return view('frontend.index');
+        $notes = Note::where('status', 'active')->get(); // Fetch all published notes for the index view
+        return view('frontend.index', compact('notes'));
     }
 
     public function about(){
