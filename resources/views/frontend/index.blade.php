@@ -49,55 +49,94 @@
     </div>
 
     {{-- ABOUT US --}}
-    <div class="bg-white px-6 py-12 md:px-12 lg:px-24">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <!-- Left: Image -->
+    <div class="bg-white px-4 sm:px-6 lg:px-24 py-12">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-12 items-start">
+            <!-- Left Section: Image & Overview -->
             <div class="w-full md:w-1/2">
-                <img src="{{ asset('asset/img/about.jpg') }}" alt="Principal Image" class="w-full h-auto ">
+                <img src="{{ asset('asset/img/about.jpg') }}" alt="Principal Image"
+                    class="w-full h-auto ">
+
             </div>
 
-            <!-- Right: Text Content -->
-            <div class="w-full md:w-1/2 text-gray-800">
-                <h2 class="text-3xl text-red-500 font-bold mb-4 py-4">
-                    Message from Europa Olympiad:
-                </h2>
-                <span>Enhance Your Mind with Europa Olympiad Exams!</span>
-                <p class="text-medium mb-4">
-                    At Europa Olympiad, we believe in nurturing the bright minds of tomorrow
-                    by providing a plaorm for students to challenge themselves and unlock their
-                    full potenal. Parcipate in presgious exams such as:
+            <!-- Right Section: Message & Details -->
+            <div class="w-full md:w-1/2 text-gray-800 space-y-6">
+                <div>
+                    <h2 class="text-3xl text-red-600 font-bold mb-2">Message from Europa Olympiad:</h2>
+                    <p class="text-lg font-medium text-gray-800">Enhance Your Mind with Europa Olympiad Exams!</p>
+                </div>
+
+                <p class="text-base">
+                    At Europa Olympiad, we believe in nurturing the bright minds of tomorrow by providing a platform for
+                    students to challenge themselves and unlock their full potential. Participate in prestigious exams such
+                    as:
                 </p>
 
-                <ul class="list-disc list-inside text-medium mb-4">
-                    <li>IGKO (Internaonal General Knowledge Olympiad)</li>
-                    <li> IAO (Internaonal Aptude Olympiad)</li>
-                    <li> ISO (Internaonal Science Olympiad)</li>
-                    <li> IMO (Internaonal Mathemacs Olympiad)</li>
+                <ul class="list-disc list-inside text-base space-y-2">
+                    <li>IGKO (International General Knowledge Olympiad)</li>
+                    <li>IAO (International Aptitude Olympiad)</li>
+                    <li>ISO (International Science Olympiad)</li>
+                    <li>IMO (International Mathematics Olympiad)</li>
                 </ul>
 
-                <p class="text-medium mb-4">
-                    These exams not only help you develop crical thinking and problem-solving
-                    skills but also ignite a passion for knowledge and learning. Whether you’re looking
-                    to test your general knowledge, explore the stars, dive deep into science, or conquer
-                    mathemacal challenges, we offer opportunies that will enhance your intellectual
-                    growth and boost your academic career.
+                <p class="text-base">
+                    These exams not only help you develop critical thinking and problem-solving skills but also ignite a
+                    passion for knowledge and learning. Whether you’re looking to test your general knowledge, explore the
+                    stars, dive deep into science, or conquer mathematical challenges, we offer opportunities that will
+                    enhance your intellectual growth and boost your academic career.
                 </p>
-                <p class="text-medium italic font-semibold">
-                    Why Choose Europa Olympiad?
-                </p>
-                <p class="text-medium mt-4">
-                    Enhance logical and analycal thinking.
-                    Gain recognion for your academic excellence.
-                    Connect with like-minded peers from around the world.
-                    Earn cerficaons that shine on your academic record.
-                    Join us at Europa Olympiad and embark on a journey that will take your
-                    mind to new heights! ✨
-                </p>
-                <span>Stay curious. Stay brilliant.</span>
-                <p class="font-bold">Europa Olympiad Team</p>
+
+
+
+                <div class="mt-6">
+                    <p class="text-lg font-medium text-gray-700">Stay curious. Stay brilliant.</p>
+                    <p class="font-bold text-gray-800">— Europa Olympiad Team</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-6 space-y-4">
+            <p class="text-lg italic font-semibold text-gray-700">Why Choose Europa Olympiad?</p>
+            <!-- Exam Details -->
+            <div class="bg-white ">
+                {{-- <h3 class="text-2xl font-bold text-red-700 border-b pb-2 mb-4">Exam Details (Paper-based - Through School)</h3>
+             --}}
+                <ul class="list-disc list-inside text-sm space-y-1 text-gray-700">
+                    <li>
+                        The Europa International Olympiad paper-based is an advanced test that challenges students
+                        to apply their learning and thinking by answering stimulating questions, which are not
+                        usually asked in standard tests.
+                    </li>
+                    <li>It's a Paper-based Exam open to all classes 1 to 10 students studying in participating
+                        school.</li>
+                    <li>Paper-based Europa International Olympiad exam is conducted through school. Students have to
+                        fill the form in the school and exam will be conducted inside-school campus during school
+                        hours.</li>
+                    <li>Laptop, Tablet, Cycle, Medals, Certificate and Scholarship for each Participating.</li>
+                    <li>If you are a student and want to participate in the paper-based Europa International
+                        Olympiad exam, please contact your school teacher. They will be able to provide you
+                        examination form.</li>
+
+                    <li>
+                        If you represent a school and want to conduct IGKO (International General Knowledge
+                        Olympiad), IAO (International Aptitude Olympiad), ISO (International Science Olympiad), IMO
+                        (International Mathematics Olympiad) exam at your school, please register your school by
+                        clicking HERE.
+                    </li>
+                    <li>In case two or more students get the same rank, an interview will be conducted to decide the
+                        award.</li>
+                    <li>Trophy, Medals, Gift Prizes and Certificate to Class Toppers of each School. Based of number
+                        of participating students. Please check the Awards and Ranking Criteria.</li>
+                    <li>Scholarships to School Toppers of each School. Based on number of participating students.
+                        Please check the Awards and Ranking Criteria.</strong>.</li>
+                    <li>
+                        If you are school representative, please click the link below to register your school for
+                        Europa International Olympiad exam.
+                        <a href="#" class="text-red-600 underline hover:text-red-800 font-medium"></a>.
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
+
 
     {{-- Latest news --}}
     <div class="flex justify-center py-6">
@@ -121,7 +160,8 @@
 
             <div class="relative h-96 sm:h-[32rem] overflow-hidden group border border-gray-300 rounded-lg shadow-lg">
                 <!-- Scrolling Content -->
-                <div class="absolute top-0 left-0 w-full animate-[scroll-up_30s_linear_infinite] group-hover:[animation-play-state:paused]">
+                <div
+                    class="absolute top-0 left-0 w-full animate-[scroll-up_30s_linear_infinite] group-hover:[animation-play-state:paused]">
                     <div class="space-y-4">
                         <!-- Slide 1 -->
                         <div class="p-4 bg-white border-b">
@@ -272,8 +312,8 @@
 
     {{-- Exams Plate (Session 2025 - 26) --}}
     <div class="flex justify-center py-6">
-        <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">Exams Plate (Session
-            2025 - 26)</h1>
+        <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">Exams Shcedule (Session
+            2025-26)</h1>
     </div>
 
     {{-- EXAM BANNER --}}
@@ -290,54 +330,54 @@
         </div>
     </div> --}}
 
-{{-- slider --}}
-<div class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-lg shadow-md">
-    <div id="slider" class="flex transition-transform duration-700 ease-in-out">
-        <!-- Slide 1 -->
-        <div class="relative w-full flex-shrink-0">
-            <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-64 object-cover" alt="Slide 1">
-            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
-                    IGKO (International General Knowledge Olympiad)
-                </p>
-                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+    {{-- slider --}}
+    <div class="relative w-full max-w-6xl mx-auto overflow-hidden rounded-lg shadow-md">
+        <div id="slider" class="flex transition-transform duration-700 ease-in-out">
+            <!-- Slide 1 -->
+            <div class="relative w-full flex-shrink-0">
+                <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-64 object-cover" alt="Slide 1">
+                <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                    <p class=" md:w-96 text-black text-md lg:text-xl md:text-xl font-bold">
+                        IGKO (International General Knowledge Olympiad)
+                    </p>
+                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                </div>
             </div>
-        </div>
 
-        <!-- Slide 2 -->
-        <div class="relative w-full flex-shrink-0">
-            <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 2">
-            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
-                    IGKO (International Aptitude Olympiad)
-                </p>
-                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            <!-- Slide 2 -->
+            <div class="relative w-full flex-shrink-0">
+                <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 2">
+                <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                    <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
+                        IGKO (International Aptitude Olympiad)
+                    </p>
+                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                </div>
             </div>
-        </div>
 
-        <!-- Slide 3 -->
-        <div class="relative w-full flex-shrink-0">
-            <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-64 object-cover" alt="Slide 3">
-            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
-                    IGKO (International Maths Olympiad)
-                </p>
-                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            <!-- Slide 3 -->
+            <div class="relative w-full flex-shrink-0">
+                <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-64 object-cover" alt="Slide 3">
+                <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                    <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
+                        IGKO (International Maths Olympiad)
+                    </p>
+                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                </div>
             </div>
-        </div>
 
-        <!-- Slide 4 -->
-        <div class="relative w-full flex-shrink-0">
-            <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 4">
-            <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                <p class="text-black text-md lg:text-3xl md:text-2xl font-bold">
-                    IGKO (International Science Olympiad)
-                </p>
-                <span class="text-black text-xs md:text-md mt-2">Date: 3 November 2025</span>
+            <!-- Slide 4 -->
+            <div class="relative w-full flex-shrink-0">
+                <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-64 object-cover" alt="Slide 4">
+                <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
+                    <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
+                        IGKO (International Science Olympiad)
+                    </p>
+                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                </div>
             </div>
         </div>
-       </div>
-</div>
+    </div>
 
 
 
@@ -354,34 +394,37 @@
             <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
                 <div class="overflow-hidden group">
                     <img src="{{ asset('asset/img/single-parent.jpg') }}" alt="Single Parent"
-                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
-                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
-                        Single Parent
+                    <p
+                        class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        Single Mother
                     </p>
                 </div>
             </div>
 
             <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
                 <div class="overflow-hidden group">
-                    <img src="{{ asset('asset/img/guardian.jpg') }}" alt="Single Parent"
-                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    <img src="{{ asset('https://cdn.pixabay.com/photo/2021/09/06/04/24/grandparents-6600799_1280.jpg') }}" alt="Single Parent"
+                        class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
-                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
-                        Guardian
+                    <p
+                        class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        Under Guardianship
                     </p>
                 </div>
             </div>
             <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
                 <div class="overflow-hidden group">
                     <img src="{{ asset('asset/img/staff-child.jpg') }}" alt="Single Parent"
-                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
-                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
-                        Staff Child
+                    <p
+                        class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                        School Teacher's and management child
                     </p>
                 </div>
             </div>
@@ -389,11 +432,12 @@
             <div class="rounded-xl overflow-hidden shadow-lg bg-white hover:shadow-2xl transition-all duration-300">
                 <div class="overflow-hidden group">
                     <img src="{{ asset('asset/img/handicap.jpg') }}" alt="Single Parent"
-                        class="w-full h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+                        class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
                 </div>
                 <div class="p-4">
-                    <p class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
-                       Handicap
+                    <p
+                        class="text-center text-lg font-semibold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                       Physical Disablity
                     </p>
                 </div>
             </div>
@@ -401,7 +445,25 @@
         </div>
     </div>
 
+{{-- how we worrk ????--}}
 
+ {{-- How does it work?--}}
+ <div class="flex justify-center py-6">
+    <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">How does it work?
+    </h1>
+</div>
+<div class="bg-gray-50 py-12 px-4 sm:px-6 lg:px-24">
+    <div class="max-w-4xl mx-auto text-center">
+
+        <p class="text-base md:text-lg text-gray-700 leading-relaxed">
+            This is an <span class="font-semibold">offline skill test</span> open to all students from <span class="font-semibold">Class 1 to 10</span>.
+            You will need to fill a form from your <span class="font-semibold">school principal</span> to appear for the test.
+        </p>
+    </div>
+</div>
+<div>
+    <img src="{{asset('asset/img/ho-work.jpg')}}" alt="" class="w-full h-auto object-cover lg:mt-6">
+</div>
     {{-- ABOUT US --}}
     <!-- Section Title -->
     <div class="flex justify-center lg:py-6">
