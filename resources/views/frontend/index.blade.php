@@ -261,45 +261,45 @@
         <div id="slider" class="flex transition-transform duration-700 ease-in-out">
             <!-- Slide 1 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-96 object-cover" alt="Slide 1">
+                <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-76 object-cover" alt="Slide 1">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class=" md:w-96 text-black text-md lg:text-xl md:text-xl font-bold">
+                    <p class=" md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International General Knowledge Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-96 object-cover" alt="Slide 2">
+                <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-76 object-cover" alt="Slide 2">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
+                    <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International Aptitude Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
             <!-- Slide 3 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-96 object-cover" alt="Slide 3">
+                <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-76 object-cover" alt="Slide 3">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
+                    <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International Maths Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
             <!-- Slide 4 -->
             <div class="relative w-full flex-shrink-0">
-                <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-96 object-cover" alt="Slide 4">
+                <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-76 object-cover" alt="Slide 4">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class="md:w-76 text-black text-md lg:text-xl md:text-xl font-bold">
+                    <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
                         IGKO (International Science Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-md mt-2">Date: 3 November 2025</span>
+                    <span class="text-black text-lg md:text-md mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
         </div>
