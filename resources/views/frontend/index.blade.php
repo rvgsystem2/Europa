@@ -164,7 +164,27 @@
                     class="absolute top-0 left-0 w-full animate-[scroll-up_30s_linear_infinite] group-hover:[animation-play-state:paused]">
                     <div class="space-y-4">
                         <!-- Slide 1 -->
-                        <div class="p-4 bg-white border-b">
+                        @forelse ($notes as $note)
+                            <div class="p-4 bg-white border-b">
+                                <div class="flex items-start space-x-4 p-4">
+                                    <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
+                                        <p class="text-lg font-bold leading-tight">{{ $note->created_at->format('d') }}</p>
+                                        <p class="text-xs leading-none">{{ $note->created_at->format('F') }}</p>
+                                        <p class="text-xs leading-none">{{ $note->created_at->format('Y') }}</p>
+                                    </div>
+                                    <div class="text-gray-800 text-sm flex-1">
+                                        <p class="font-semibold">{{ $note->title }}</p>
+                                        <p>{{ $note->content }}</p>
+                                    </div>
+                                    <i class="ri-attachment-2 text-gray-500"></i>
+                                </div>
+                            </div>
+                        @empty
+                            <div class="p-4 bg-white border-b">
+                                <p class="text-gray-500">No notes available.</p>
+                            </div>
+                        @endforelse
+                        {{-- <div class="p-4 bg-white border-b">
                             <div class="flex items-start space-x-4 p-4">
                                 <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
                                     <p class="text-lg font-bold leading-tight">30</p>
@@ -177,103 +197,9 @@
                                 </div>
                                 <i class="ri-attachment-2 text-gray-500"></i>
                             </div>
-                        </div>
+                        </div> --}}
 
-                        <!-- Slide 2 -->
-                        <div class="p-4 bg-white border-b">
-                            <div class="flex items-start space-x-4 p-4">
-                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                                    <p class="text-lg font-bold leading-tight">30</p>
-                                    <p class="text-xs leading-none">May</p>
-                                    <p class="text-xs leading-none">24</p>
-                                </div>
-                                <div class="text-gray-800 text-sm flex-1">
-                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
-                                    <p>IX-XII Summer Vacation - 2024-25</p>
-                                </div>
-                                <i class="ri-attachment-2 text-gray-500"></i>
-                            </div>
-                        </div>
-
-                        <!-- Slide 3 -->
-                        <div class="p-4 bg-white border-b">
-                            <div class="flex items-start space-x-4 p-4">
-                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                                    <p class="text-lg font-bold leading-tight">30</p>
-                                    <p class="text-xs leading-none">Feb</p>
-                                    <p class="text-xs leading-none">4</p>
-                                </div>
-                                <div class="text-gray-800 text-sm flex-1">
-                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
-                                    <p>IX-XII Summer Vacation - 2024-25</p>
-                                </div>
-                                <i class="ri-attachment-2 text-gray-500"></i>
-                            </div>
-                        </div>
-
-                        <!-- Slide 4 -->
-                        <div class="p-4 bg-white border-b">
-                            <div class="flex items-start space-x-4 p-4">
-                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                                    <p class="text-lg font-bold leading-tight">30</p>
-                                    <p class="text-xs leading-none">Jan</p>
-                                    <p class="text-xs leading-none">4</p>
-                                </div>
-                                <div class="text-gray-800 text-sm flex-1">
-                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
-                                    <p>IX-XII Summer Vacation - 2024-25</p>
-                                </div>
-                                <i class="ri-attachment-2 text-gray-500"></i>
-                            </div>
-                        </div>
-
-                        <!-- Slide 5 -->
-                        <div class="p-4 bg-white border-b">
-                            <div class="flex items-start space-x-4 p-4">
-                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                                    <p class="text-lg font-bold leading-tight">30</p>
-                                    <p class="text-xs leading-none">May</p>
-                                    <p class="text-xs leading-none">24</p>
-                                </div>
-                                <div class="text-gray-800 text-sm flex-1">
-                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
-                                    <p>IX-XII Summer Vacation - 2024-25</p>
-                                </div>
-                                <i class="ri-attachment-2 text-gray-500"></i>
-                            </div>
-                        </div>
-
-                        <!-- Slide 6 -->
-                        <div class="p-4 bg-white border-b">
-                            <div class="flex items-start space-x-4 p-4">
-                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                                    <p class="text-lg font-bold leading-tight">30</p>
-                                    <p class="text-xs leading-none">June</p>
-                                    <p class="text-xs leading-none">2</p>
-                                </div>
-                                <div class="text-gray-800 text-sm flex-1">
-                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
-                                    <p>IX-XII Summer Vacation - 2024-25</p>
-                                </div>
-                                <i class="ri-attachment-2 text-gray-500"></i>
-                            </div>
-                        </div>
-
-                        <!-- Slide 7 -->
-                        <div class="p-4 bg-white border-b">
-                            <div class="flex items-start space-x-4 p-4">
-                                <div class="bg-black text-white px-3 py-2 rounded-md text-center min-w-[60px]">
-                                    <p class="text-lg font-bold leading-tight">30</p>
-                                    <p class="text-xs leading-none">March</p>
-                                    <p class="text-xs leading-none">4</p>
-                                </div>
-                                <div class="text-gray-800 text-sm flex-1">
-                                    <p class="font-semibold">Summer Vacation - 2024-25</p>
-                                    <p>IX-XII Summer Vacation - 2024-25</p>
-                                </div>
-                                <i class="ri-attachment-2 text-gray-500"></i>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

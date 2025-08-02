@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\NoteController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProfileController;
 
@@ -115,7 +116,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/user/permissions/{user}', [UserController::class, 'assignPermissionForm'])->name('user.permission.form');
     Route::post('/user/permissions/{user}', [UserController::class, 'assignPermissionToUser'])->name('user.assign-permission');
 
-
+    // Note Routes
+    Route::get('notes/index',[NoteController::class,'index'])->name('notes.index');
+    Route::get('notes/create',[NoteController::class,'create'])->name('notes.create');
+    Route::post('notes/store',[NoteController::class,'store'])->name('notes.store');
+    Route::get('notes/edit/{note}',[NoteController::class,'edit'])->name('notes.edit');
+    Route::post('notes/update/{note}',[NoteController::class,'update'])->name('notes.update');
+    Route::get('notes/delete/{note}',[NoteController::class,'destroy'])->name('notes.delete');
 
 
 

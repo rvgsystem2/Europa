@@ -2,6 +2,7 @@
     <!-- Container -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 bg-white">
         <div class="flex justify-between h-16">
+            
             <!-- Left: Logo & Main Nav -->
             <div class="flex">
                 <!-- Logo -->
@@ -53,6 +54,11 @@
 
                         </div>
                     </div>
+
+                    <!-- Notes -->
+                    <x-nav-link :href="route('notes.index')" :active="request()->routeIs('notes.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> Notes
+                    </x-nav-link>
                 </div>
             </div>
 
