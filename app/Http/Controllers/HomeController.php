@@ -31,7 +31,7 @@ class HomeController extends Controller
     public function contact(){
         return view('frontend.contact');
     }
-    
+
     public function iso_exam(){
         return view('frontend.iso_exam');
     }
@@ -70,6 +70,14 @@ class HomeController extends Controller
 
     public function iso_8(){
         return view('frontend.iso_8');
+    }
+
+    public function iso_9(){
+        return view('frontend.iso_9');
+    }
+
+    public function iso_10(){
+        return view('frontend.iso_10');
     }
 
     public function imo_1(){
@@ -194,5 +202,13 @@ class HomeController extends Controller
 
     public function imo_10(){
         return view('frontend.imo_10');
+    }
+
+    public function privacy(){
+        return view('frontend.privacy');
+    }
+
+    public function term(){
+        return view('frontend.term');
     }
 }

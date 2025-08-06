@@ -34,19 +34,19 @@
           <h3 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">Quick Links</h3>
           <ul class="space-y-2">
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Home</a></li>
             <li><a href="{{ route('about') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               About Us</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Olympiad Info</a></li>
             <li><a href="{{ route('contact') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Contact</a></li>
             <li><a href="#" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               FAQ</a></li>
           </ul>
         </div>
@@ -56,19 +56,19 @@
           <h3 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">Our Olympiads</h3>
           <ul class="space-y-2">
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Europa (IGKO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Europa (IAO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Europa (ISO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               Europa (IMO)</a></li>
             <li><a href="{{ route('index') }}" class="flex items-center hover:text-[#3AB464] transition">
-              <svg class="h-4 w-4 mr-2 text-gray-800" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+              <img width="24" height="24" src="https://img.icons8.com/material-rounded/24/forward.png" alt="forward"/>
               View All Olympiads</a></li>
           </ul>
         </div>
@@ -112,7 +112,7 @@
                 <linearGradient id="Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1" x1="9.993" x2="40.615" y1="9.993" y2="40.615" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#2aa4f4"></stop><stop offset="1" stop-color="#007ad9"></stop></linearGradient><path fill="url(#Ld6sqrtcxMyckEl6xeDdMa_uLWV5A9vXIPu_gr1)" d="M24,4C12.954,4,4,12.954,4,24s8.954,20,20,20s20-8.954,20-20S35.046,4,24,4z"></path><path fill="#fff" d="M26.707,29.301h5.176l0.813-5.258h-5.989v-2.874c0-2.184,0.714-4.121,2.757-4.121h3.283V12.46 c-0.577-0.078-1.797-0.248-4.102-0.248c-4.814,0-7.636,2.542-7.636,8.334v3.498H16.06v5.258h4.948v14.452 C21.988,43.9,22.981,44,24,44c0.921,0,1.82-0.084,2.707-0.204V29.301z"></path>
                 </svg>
         </a>
-        <a href="#" class="hover:text-gray-400">
+        <a href="https://www.instagram.com/p/DM7S65fygVk/?igsh=ZHB3c3pkaWdpaDBi" class="hover:text-gray-400">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="30" height="30" viewBox="0 0 48 48">
                 <radialGradient id="yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1" cx="19.38" cy="42.035" r="44.899" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#fd5"></stop><stop offset=".328" stop-color="#ff543f"></stop><stop offset=".348" stop-color="#fc5245"></stop><stop offset=".504" stop-color="#e64771"></stop><stop offset=".643" stop-color="#d53e91"></stop><stop offset=".761" stop-color="#cc39a4"></stop><stop offset=".841" stop-color="#c837ab"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8ma_Xy10Jcu1L2Su_gr1)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><radialGradient id="yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2" cx="11.786" cy="5.54" r="29.813" gradientTransform="matrix(1 0 0 .6663 0 1.849)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#4168c9"></stop><stop offset=".999" stop-color="#4168c9" stop-opacity="0"></stop></radialGradient><path fill="url(#yOrnnhliCrdS2gy~4tD8mb_Xy10Jcu1L2Su_gr2)" d="M34.017,41.99l-20,0.019c-4.4,0.004-8.003-3.592-8.008-7.992l-0.019-20	c-0.004-4.4,3.592-8.003,7.992-8.008l20-0.019c4.4-0.004,8.003,3.592,8.008,7.992l0.019,20	C42.014,38.383,38.417,41.986,34.017,41.99z"></path><path fill="#fff" d="M24,31c-3.859,0-7-3.14-7-7s3.141-7,7-7s7,3.14,7,7S27.859,31,24,31z M24,19c-2.757,0-5,2.243-5,5	s2.243,5,5,5s5-2.243,5-5S26.757,19,24,19z"></path><circle cx="31.5" cy="16.5" r="1.5" fill="#fff"></circle><path fill="#fff" d="M30,37H18c-3.859,0-7-3.14-7-7V18c0-3.86,3.141-7,7-7h12c3.859,0,7,3.14,7,7v12	C37,33.86,33.859,37,30,37z M18,13c-2.757,0-5,2.243-5,5v12c0,2.757,2.243,5,5,5h12c2.757,0,5-2.243,5-5V18c0-2.757-2.243-5-5-5H18z"></path>
                 </svg>
@@ -131,9 +131,9 @@
       <div class="mt-12 pt-8 border-t border-gray-200">
         <div class="flex flex-col md:flex-row justify-between items-center">
           <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-4 md:mb-0 text-sm">
-            <a href="#" class="hover:text-[#3AB464] transition">Privacy Policy</a>
-            <a href="#" class="hover:text-[#3AB464] transition">Terms of Service</a>
-            <a href="#" class="hover:text-[#3AB464] transition">Cookie Policy</a>
+            <a href="{{route('privacy')}}" class="hover:text-[#3AB464] transition">Privacy Policy</a>
+            <a href="{{route('term')}}" class="hover:text-[#3AB464] transition">Terms of Service</a>
+            <a href="{{route('privacy')}}" class="hover:text-[#3AB464] transition">Cookie Policy</a>
             <a href="#" class="hover:text-[#3AB464] transition">Sitemap</a>
           </div>
           <div class="text-center md:text-right text-sm text-black">

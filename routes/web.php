@@ -5,7 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProfileController;
-
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\RoleController;
 
 use App\Http\Controllers\UserController;
@@ -24,6 +24,9 @@ Route::get('/iao_exam', [HomeController::class, 'iao_exam'])->name('iao_exam');
 Route::get('/iso_exam', [HomeController::class, 'iso_exam'])->name('iso_exam');
 Route::get('/imo_exam', [HomeController::class, 'imo_exam'])->name('imo_exam');
 Route::get('/igko_exam', [HomeController::class, 'igko_exam'])->name('igko_exam');
+Route::get('/privacy', [HomeController::class, 'privacy'])->name('privacy');
+Route::get('/term',[HomeController::class, 'term'])->name('term');
+
 // iso classes :::::
 Route::get('/iso_1', [HomeController::class, 'iso_1'])->name('iso_1');
 Route::get('/iso_2', [HomeController::class, 'iso_2'])->name('iso_2');
@@ -33,6 +36,8 @@ Route::get('/iso_5', [HomeController::class, 'iso_5'])->name('iso_5');
 Route::get('/iso_6', [HomeController::class, 'iso_6'])->name('iso_6');
 Route::get('/iso_7', [HomeController::class, 'iso_7'])->name('iso_7');
 Route::get('/iso_8', [HomeController::class, 'iso_8'])->name('iso_8');
+Route::get('/iso_9', [HomeController::class, 'iso_9'])->name('iso_9');
+Route::get('/iso_10', [HomeController::class, 'iso_10'])->name('iso_10');
 
 // imo classes::::::::::
 Route::get('/imo_1',[HomeController::class, 'imo_1'])->name('imo_1');
@@ -81,7 +86,12 @@ Route::get('/iao_10',[HomeController::class, 'iao_10'])->name('iao_10');
 
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth','verified'])->name('dashboard');
 
-
+// BACKEND-ROUTES::::::::;
+Route::get('/banner/index', [BannerController::class, 'index'])->name('banner.index');
+Route::get('/banner/create', [BannerController::class, 'create'])->name('banner.create');
+Route::post('/banner/store', [BannerController::class, 'store'])->name('banner.store');
+Route::get('/banner/edit', [BannerController::class, 'edit'])->name('banner.edit');
+Route::get('/banner/delete', [BannerController::class, 'delete'])->name('banner.delete');
 
 
 // Routes that require authentication

@@ -15,7 +15,7 @@
 
                 <div class="mt-4 bg-red-100 p-4 rounded-lg shadow-sm">
                     <p class="text-gray-900 font-semibold">📞 Phone:</p>
-                    <p class="text-gray-700">+91 9170032441</p>
+                    <p class="text-gray-700">+919170032441</p>
                 </div>
 
                 <div class="mt-4 bg-red-100 p-4 rounded-lg shadow-sm">

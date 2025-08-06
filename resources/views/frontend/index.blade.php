@@ -99,11 +99,11 @@
             <div class="bg-white ">
                 {{-- <h3 class="text-2xl font-bold text-red-700 border-b pb-2 mb-4">Exam Details (Paper-based - Through School)</h3>
              --}}
-                <ul class="list-disc list-inside text-base space-y-1 text-gray-700">
+                <ul class="list-disc list-inside text-base space-y-1 text-gray-700 text-start">
                     <li>
                         The Europa International Olympiad paper-based is an advanced test that challenges students
                         to apply their learning and thinking by answering stimulating questions, which are not
-                        usually asked in standard tests.
+                         usually asked in standard tests.
                     </li>
                     <li>It's a Paper-based Exam open to all classes 1 to 10 students studying in participating
                         school.</li>
@@ -238,7 +238,7 @@
 
     {{-- Exams Plate (Session 2025 - 26) --}}
     <div class="flex justify-center py-6">
-        <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">Exams Shcedule (Session
+        <h1 class=" bg-pink-300 py-3 text-center text-xl sm:text-3xl md:text-4xl font-bold w-full">Exams Schedule (Session
             2025-26)</h1>
     </div>
 
@@ -263,10 +263,10 @@
             <div class="relative w-full flex-shrink-0">
                 <img src="{{ asset('asset/img/G.K..png') }}" class="w-full md:h-76 object-cover" alt="Slide 1">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class=" md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
+                    <p class=" md:w-96 text-black text-md lg:text-3xl md:text-3xl font-semibold letter-spacing-wide">
                         IGKO (International General Knowledge Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-red-600 text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
@@ -274,10 +274,10 @@
             <div class="relative w-full flex-shrink-0">
                 <img src="{{ asset('asset/img/APTITUDE.png') }}" class="w-full md:h-76 object-cover" alt="Slide 2">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
-                        IGKO (International Aptitude Olympiad)
+                    <p class="md:w-96 text-black text-md lg:text-3xl md:text-3xl font-semibold letter-spacing-wide">
+                        IAO (International Aptitude Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-red-600 text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
@@ -285,10 +285,10 @@
             <div class="relative w-full flex-shrink-0">
                 <img src="{{ asset('asset/img/MATHS.png') }}" class="w-full md:h-76 object-cover" alt="Slide 3">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
-                        IGKO (International Maths Olympiad)
+                    <p class="md:w-96 text-black text-md lg:text-3xl md:text-3xl font-semibold letter-spacing-wide">
+                        IMO (International Maths Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-red-600 text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
 
@@ -296,10 +296,10 @@
             <div class="relative w-full flex-shrink-0">
                 <img src="{{ asset('asset/img/SCIENCE.png') }}" class="w-full md:h-76 object-cover" alt="Slide 4">
                 <div class="absolute inset-0 p-6 flex flex-col items-start justify-start text-start px-4 z-10">
-                    <p class="md:w-96 text-black text-md lg:text-2xl md:text-3xl font-semibold">
-                        IGKO (International Science Olympiad)
+                    <p class="md:w-96 text-black text-md lg:text-3xl md:text-3xl font-semibold letter-spacing-wide">
+                        ISO (International Science Olympiad)
                     </p>
-                    <span class="text-black text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
+                    <span class="text-red-600 text-lg md:text-4xl mt-2 font-bold">Date: 3 November 2025</span>
                 </div>
             </div>
         </div>
@@ -387,9 +387,16 @@
         </p>
     </div>
 </div>
-<div>
-    <img src="{{asset('asset/img/ho-work.jpg')}}" alt="" class="w-full h-auto object-cover  p-4">
+<div class="w-full p-8 ">
+    <div class=" mx-auto ">
+        <img
+            src="{{ asset('asset/img/ho-work.jpg') }}"
+            alt="How it Works"
+            class="w-full h-auto object-cover"
+        >
+    </div>
 </div>
+
     {{-- ABOUT US --}}
     <!-- Section Title -->
     <div class="flex justify-center lg:py-6">
@@ -558,8 +565,8 @@
                         <div>
                             <h3 class="text-lg font-semibold text-gray-900 mb-1">Phone</h3>
                             <p class="text-sm text-gray-600">
-                                <a href="tel:+919876543210" class="hover:text-blue-600 transition-colors">
-                                    +91 98765 43210
+                                <a href="tel:+919170032441" class="hover:text-blue-600 transition-colors">
+                                    +919170032441
                                 </a>
                             </p>
                         </div>
@@ -589,7 +596,7 @@
                     <div class="w-full lg:w-1/2 h-full">
                         <div class="relative rounded-xl overflow-hidden shadow-md h-full lg:min-h-[600px]">
                             <iframe class="absolute  w-full h-full object-cover border-0"
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3570.7953924458748!2d80.279698!3d26.494532!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399c3826d4ebf859%3A0xe9e2ed37cc371552!2sReal%20Victory%20Groups!5e0!3m2!1sen!2sin!4v1753942228185!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3570.965737894048!2d80.267935!3d26.489048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDI5JzIwLjYiTiA4MMKwMTYnMDQuNiJF!5e0!3m2!1sen!2sin!4v1754458022220!5m2!1sen!2sin"
                                 allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                                 aria-label="Google Maps location of Real Victory Groups">
                             </iframe>

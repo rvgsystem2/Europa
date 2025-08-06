@@ -107,8 +107,8 @@
                     <p class="text-gray-600"><span class="font-medium">Email:</span> <a
                             href="mailto:info@europaolympiad.com"
                             class="text-blue-600 hover:underline">info@europaolympiad.org</a></p>
-                    <p class="text-gray-600 mt-2"><span class="font-medium">Mobile:</span> <a href="tel:+911234567890"
-                            class="text-blue-600 hover:underline">+91 8787286010</a></p>
+                    <p class="text-gray-600 mt-2"><span class="font-medium">Mobile:</span> <a href="tel:+919170032441"
+                            class="text-blue-600 hover:underline">+919170032441</a></p>
                 </div>
 
                 <!-- Social & Quick Links -->
