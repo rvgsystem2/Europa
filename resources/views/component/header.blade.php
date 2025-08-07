@@ -262,95 +262,137 @@
                 <div class="bg-white p-4 sm:p-6 rounded-lg max-w-5xl w-full shadow-lg">
                     <h2 class="text-xl font-bold mb-4 text-center">Registration</h2>
 
-                    <form action="#" method="POST"
+                    <form action="{{ isset($registration) ? route('registration.update', $registration->id) : route('registration.store') }}"
+                        method="POST"
                         class="mt-6 bg-white p-2 rounded-lg shadow-md border border-red-200">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                            <div>
-                                <label class="block text-gray-700 font-medium">Your Name</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Full Name" required>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">Email ID</label>
-                                <input type="email"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Email ID" required>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">Contact Number</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Contact Number" required>
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">Principal Name</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Full Name">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">Principal Mobile Number</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Contact Number">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">Principal Email ID</label>
-                                <input type="email"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Email ID">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">School Name</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="School Name">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">School Address</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="School Address">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">School City</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="School City">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">School State</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="School State">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">School Pincode</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="School Pincode">
-                            </div>
-                            <div>
-                                <label class="block text-gray-700 font-medium">Your Country</label>
-                                <input type="text"
-                                    class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                    placeholder="Your Country">
-                            </div>
-                        </div>
+                      @csrf
+                      @if(isset($registration))
+                          @method('PUT') {{-- Required for update routes --}}
+                      @endif
 
-                        {{-- <button type="submit"
-                            class="mt-6 bg-red-600 text-white py-3 px-6 w-full rounded-lg font-bold text-lg hover:bg-red-700 transition duration-300 ease-in-out shadow-lg">
-                            Submit Inquiry
-                        </button> --}}
-                        <div class="flex flex-col sm:flex-row gap-2 sm:justify-between mt-1">
-                            <button type="button" onclick="togglePopup()"
-                            class="w-full sm:w-auto border border-red-500 text-red-500 hover:bg-red-200 px-4 py-2 rounded">Close</button>
-                            <button type="submit"
-                                class="w-full sm:w-auto border border-green-500 hover:bg-green-200 text-green-500 px-4 py-2 rounded">Submit</button>
+                      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                          <div>
+                              <label class="block text-gray-700 font-medium">Your Name</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Full Name"
+                                     name="name"
+                                     value="{{ old('name', $registration->name ?? '') }}" required>
+                          </div>
 
-                            </div>
-                    </form>
+                          <div>
+                              <label class="block text-gray-700 font-medium">Email ID</label>
+                              <input type="email"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Email ID"
+                                     name="email"
+                                     value="{{ old('email', $registration->email ?? '') }}" required>
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">Contact Number</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Contact Number"
+                                     name="contact_number"
+                                     value="{{ old('contact_number', $registration->contact_number ?? '') }}" required>
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">Principal Name</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Full Name"
+                                     name="principal_name"
+                                     value="{{ old('principal_name', $registration->principal_name ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">Principal Mobile Number</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Contact Number"
+                                     name="principal_mobile_number"
+                                     value="{{ old('principal_mobile_number', $registration->principal_mobile_number ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">Principal Email ID</label>
+                              <input type="email"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Email ID"
+                                     name="principal_email_id"
+                                     value="{{ old('principal_email_id', $registration->principal_email_id ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">School Name</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="School Name"
+                                     name="school_name"
+                                     value="{{ old('school_name', $registration->school_name ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">School Address</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="School Address"
+                                     name="school_address"
+                                     value="{{ old('school_address', $registration->school_address ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">School City</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="School City"
+                                     name="school_city"
+                                     value="{{ old('school_city', $registration->school_city ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">School State</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="School State"
+                                     name="school_state"
+                                     value="{{ old('school_state', $registration->school_state ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">School Pincode</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="School Pincode"
+                                     name="school_pincode"
+                                     value="{{ old('school_pincode', $registration->school_pincode ?? '') }}">
+                          </div>
+
+                          <div>
+                              <label class="block text-gray-700 font-medium">Your Country</label>
+                              <input type="text"
+                                     class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
+                                     placeholder="Your Country"
+                                     name="country"
+                                     value="{{ old('country', $registration->country ?? '') }}">
+                          </div>
+                      </div>
+
+                      <div class="flex flex-col sm:flex-row gap-2 sm:justify-between mt-6">
+                          <button type="button"
+                                  onclick="togglePopup()"
+                                  class="w-full sm:w-auto border border-red-500 text-red-500 hover:bg-red-200 px-4 py-2 rounded">
+                              Close
+                          </button>
+                          <button type="submit"
+                                  class="w-full sm:w-auto border border-green-500 hover:bg-green-200 text-green-500 px-4 py-2 rounded">
+                              Submit
+                          </button>
+                      </div>
+                  </form>
+
                 </div>
             </div>
 
@@ -453,85 +495,90 @@
         <button onclick="toggleMobilePopup()" class="block p-2 border border-black hover:text-gray-600 cursor-pointer">Registration</button>
 
         <!-- Mobile-Only Popup Modal -->
-        <div id="mobilePopup"
+        {{-- <div id="mobilePopup"
             class="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center hidden z-50 px-4 sm:hidden mobile-modal">
             <div class="bg-white p-4 rounded-lg h-full max-w-sm w-full shadow-lg my-12 overflow-scroll">
                 <h2 class="text-xl font-bold mb-4 text-center">Registration</h2>
 
-                <form action="#" method="POST"
+                <form action="{{ isset($registration) ? route('registration.update', $registration->id) : route('registration.store') }}" method="POST"
                     class="mt-6 bg-white p-2 h-auto rounded-lg shadow-md border border-red-200 overflow-y-scroll">
+                    @csrf
+
+                    @if(isset($registration)) @endif
+
+
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label class="block text-gray-700 font-medium">Your Name</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Full Name" required>
+                                placeholder="Full Name" value="{{ old('name', $registration->name ?? '') }}" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">Email ID</label>
                             <input type="email"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Email ID" required>
+                                placeholder="Email ID" value="{{old('email', $registration->email ?? '')}}" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">Contact Number</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Contact Number" required>
+                                placeholder="Contact Number" value="{{old('contact_number', $registration->contact_number ?? '')}}" required>
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">Principal Name</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Full Name">
+                                placeholder="Full Name" value="{{old('principal_name', $registration->principal_name ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">Principal Mobile Number</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Contact Number">
+                                placeholder="Contact Number" value="{{old('principal_mobile', $registration->principal_mobile ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">Principal Email ID</label>
                             <input type="email"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Email ID">
+                                placeholder="Email ID" value="{{old('principal_email', $registration->principal_email ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">School Name</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="School Name">
+                                placeholder="School Name" value="{{old('school_name', $registration->school_name ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">School Address</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="School Address">
+                                placeholder="School Address" value="{{old('school_address', $registration->school_address ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">School City</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="School City">
+                                placeholder="School City" value="{{old('school_city', $registration->school_city ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">School State</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="School State">
+                                placeholder="School State" value="{{old('school_state', $registration->school_state ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">School Pincode</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="School Pincode">
+                                placeholder="School Pincode" value="{{old('school_pincode', $registration->school_pincode ?? '')}}">
                         </div>
                         <div>
                             <label class="block text-gray-700 font-medium">Your Country</label>
                             <input type="text"
                                 class="w-full p-3 border border-gray-300 rounded-lg focus:border-red-500"
-                                placeholder="Your Country">
+                                placeholder="Your Country" value="{{old('country', $registration->country ?? '')}}">
                         </div>
                     </div>
 
@@ -543,7 +590,7 @@
                     </div>
                 </form>
             </div>
-        </div>
+        </div> --}}
 
         <!-- JavaScript for Toggling the Mobile Popup -->
         <script>

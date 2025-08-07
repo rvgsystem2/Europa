@@ -3,63 +3,77 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Banner;
+use Illuminate\Support\Facades\Storage;
 
 class BannerController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {
-        //
+        $banners = Banner::latest()->get();
+        return view('Backend.banner.index', compact('banners'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
-    
     {
-        //
+        return view('Backend.banner.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'image' => 'required|image|mimes:jpg,jpeg,png|max:2048'
+        ]);
+
+        $imagePath = $request->file('image')->store('banners', 'public');
+
+        Banner::create([
+            'image' => $imagePath
+        ]);
+
+        return redirect()->route('banner.index')->with('success', 'Banner uploaded successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function edit($id)
     {
-        //
+        // dd($banner);
+        $banners = Banner::findOrFail($id);
+        if (!$banners) {
+            return redirect()->route('banner.index')->with('error', 'Banner not found.');
+        }
+        // dd($banners);
+        return view('Backend.banner.edit', compact('banners'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
+    public function update(Request $request, Banner $id)
     {
-        //
+        // dd(request()->all());
+        $request->validate([
+            'image' => 'nullable|image|mimes:jpg,jpeg,png|max:2048'
+        ]);
+
+        if ($request->hasFile('image')) {
+            if ($id->image && Storage::disk('public')->exists($id->image)) {
+                Storage::disk('public')->delete($id->image);
+            }
+
+            $imagePath = $request->file('image')->store('$ids', 'public');
+            $id->update(['image' => $imagePath]);
+        }
+
+        return redirect()->route('banner.index')->with('success', 'Banner updated successfully.');
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
-    public function update(Request $request, string $id)
+    public function destroy(Banner $banner)
     {
-        //
-    }
+        if ($banner->image && Storage::disk('public')->exists($banner->image)) {
+            Storage::disk('public')->delete($banner->image);
+        }
 
-    /**
-     * Remove the specified resource from storage.
-     */
-    public function destroy(string $id)
-    {
-        //
+        $banner->delete();
+
+        return redirect()->route('banner.index')->with('success', 'Banner deleted successfully.');
     }
 }
+
+

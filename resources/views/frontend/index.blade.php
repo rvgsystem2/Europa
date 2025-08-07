@@ -429,7 +429,7 @@
         </div>
 
         <!-- Paragraph Below Image -->
-        <div class="max-w-5xl mx-auto mt-6 text-gray-700 text-sm md:text-xl leading-relaxed px-2">
+        <div class="max-w-7xl mx-auto mt-6 text-gray-700 text-sm md:text-xl leading-relaxed px-2">
             <p>
                 All our activities aim to make learning an interactive and engaging process where
                 students can apply their skills, memory, and knowledge effectively.
@@ -607,15 +607,17 @@
                     <div class="w-full lg:w-1/2">
                         <div class="bg-white p-6 sm:p-8 rounded-xl shadow-md h-full">
                             <h2 class="text-2xl font-bold mb-6 text-gray-800">Connect With Us</h2>
-                            <form class="space-y-4" method="POST" action="#">
+                            <form class="space-y-4" method="POST" action="{{ isset($contact) ? route('contact.update', $contact->id) : route('contact.store') }}">
                                 @csrf
+
+                                @if(isset($contact)) @endif
 
                                 <!-- Name Field -->
                                 <div>
                                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                                         Full Name <span class="text-red-500">*</span>
                                     </label>
-                                    <input type="text" id="name" name="name" placeholder="Enter your name"
+                                    <input type="text" id="name" name="name" value="{{ old('name', $contact->name ?? '') }}" placeholder="Enter your name"
                                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                                         required>
                                 </div>
@@ -628,7 +630,7 @@
                                     <input type="email" id="email" name="email"
                                         placeholder="your.email@example.com"
                                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                        required>
+                                        required ={{ old('email', $contact->email ?? '') }}>
                                 </div>
 
                                   <!-- Number -->
@@ -636,9 +638,9 @@
                                     <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
                                         Contact no. <span class="text-red-500">*</span>
                                     </label>
-                                    <input type="number" id="number" name="number" placeholder="Enter your number"
+                                    <input type="number" id="number" name="phone" placeholder="Enter your number"
                                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                        required>
+                                        required={{ old('phone', $contact->phone ?? '') }}>
                                 </div>
                                 <!-- Message Field -->
                                 <div>
@@ -647,13 +649,13 @@
                                     </label>
                                     <textarea id="message" name="message" rows="4" placeholder="How can we help you?"
                                         class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                                        required></textarea>
+                                        required={{old('message', $contact->message ?? ' ')}}></textarea>
                                 </div>
 
                                 <!-- Submit Button -->
                                 <button type="submit"
-                                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
-                                    Send Message
+                                    class="w-full bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"   {{ isset($contact) ? 'Update' : 'Create' }}>
+                                    <a href="/">Send Message</a>
                                 </button>
                             </form>
                         </div>

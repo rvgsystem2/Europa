@@ -1,15 +1,21 @@
 <?php
 
+use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NoteController;
 use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BannerController;
+use App\Http\Controllers\ContactController;
+use App\Http\Controllers\Exam_scheduleController;
+use App\Http\Controllers\FreestdController;
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\RoleController;
 
 use App\Http\Controllers\UserController;
-
+use App\Models\Freestd;
 use Illuminate\Support\Facades\Response;
 use Illuminate\Support\Facades\Route;
 
@@ -87,12 +93,69 @@ Route::get('/iao_10',[HomeController::class, 'iao_10'])->name('iao_10');
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->middleware(['auth','verified'])->name('dashboard');
 
 // BACKEND-ROUTES::::::::;
+//  -----------------------//BANNER ROUTES//-----------------------;
 Route::get('/banner/index', [BannerController::class, 'index'])->name('banner.index');
 Route::get('/banner/create', [BannerController::class, 'create'])->name('banner.create');
 Route::post('/banner/store', [BannerController::class, 'store'])->name('banner.store');
-Route::get('/banner/edit', [BannerController::class, 'edit'])->name('banner.edit');
-Route::get('/banner/delete', [BannerController::class, 'delete'])->name('banner.delete');
+Route::get('/banner/edit/{id}', [BannerController::class, 'edit'])->name('banner.edit');
+Route::post('/banner/update/{id}', [BannerController::class, 'update'])->name('banner.update');
+Route::get('/banner/delete/{banner}', [BannerController::class, 'destroy'])->name('banner.delete');
 
+// -----------------------//END BANNER ROUTES//-----------------------;
+
+// -----------------------//MESSAGES ROUTES//-----------------------;
+Route::get('/message/index',[MessageController::class, 'index'])->name('message.index');
+Route::get('/message/create', [MessageController::class, 'create'])->name('message.create');
+Route::post('/message/store', [MessageController::class, 'store'])->name('message.store');
+Route::get('/message/edit/{id}', [MessageController::class, 'edit'])->name('message.edit');
+Route::post('/message/update/{id}', [MessageController::class, 'update'])->name('message.update');
+Route::get('/message/delete/{message}', [MessageController::class, 'destroy'])->name('message.delete');
+
+// -----------------------//END MESSAGES ROUTES//-----------------------;
+
+// -----------------------//Exam_shcedule ROUTES//-----------------------;
+Route::get('/exam_schedule/index', [Exam_scheduleController::class, 'index'])->name('exam_schedule.index');
+Route::get('/exam_schedule/create', [Exam_scheduleController::class, 'create'])->name('exam_schedule.create');
+Route::post('/exam_schedule/store', [Exam_scheduleController::class, 'store'])->name('exam_schedule.store');
+Route::get('/exam_schedule/edit/{id}',[Exam_scheduleController::class, 'edit'])->name('exam_schedule.edit');
+Route::post('/exam_schedule/update/{id}', [Exam_scheduleController::class, 'update'])->name('exam_schedule.update');
+Route::get('/exam_schedule/delete/{exam_schedule}', [Exam_scheduleController::class, 'destroy'])->name('exam_schedule.delete');
+
+// -----------------------//END Exam_shcedule ROUTES//-----------------------;
+
+// ---------------------------//FREE FOR STUDENTS /// -----------------------;
+Route::get('/freestd/index', [FreestdController::class, 'index'])->name('freestd.index');
+Route::get('/freestd/create', [FreestdController::class, 'create'])->name('freestd.create');
+Route::post('/freestd/store', [FreestdController::class, 'store'])->name('freestd.store');
+Route::get('/freestd/edit/{id}', [FreestdController::class, 'edit'])->name('freestd.edit');
+Route::post('/freestd/update/{id}', [FreestdController::class, 'update'])->name('freestd.update');
+Route::get('/freestd/delete/{freestd}', [FreestdController::class, 'destroy'])->name('freestd.delete');
+
+// ---------------------------//END FREE FOR STUDENTS /// -----------------------;
+
+// -----------------------------//About us // -------------------------------000;\
+Route::get('/about/index', [AboutController::class, 'index'])->name('about.index');
+Route::get('/about/create', [AboutController::class, 'create'])->name('about.create');
+Route::post('/about/store', [AboutController::class, 'store'])->name('about.store');
+Route::get('/about/edit/{id}', [AboutController::class, 'edit'])->name('about.edit');
+Route::post('/about/update/{id}', [AboutController::class, 'update'])->name('about.update');
+Route::get('/about/delete/{about}', [AboutController::class, 'destroy'])->name('about.delete');
+
+// ----------------------------------//end About us // ----------------------------------;
+
+// ------------------------------//Contact us // -------------------------------000;\
+Route::get('/contact/index', [ContactController::class, 'index'])->name('contact.index');
+Route::get('/contact/create', [ContactController::class, 'create'])->name('contact.create');
+Route::post('/contact/store', [ContactController::class, 'store'])->name('contact.store');
+Route::get('/contact/delete/{contact}', [ContactController::class, 'destroy'])->name('contact.delete');
+
+//-------------------------------------//end Contact us // ----------------------------------;
+// ----------------------------------//Registration Routes // ----------------------------------;
+Route::get('/registration/index', [RegistrationController::class, 'index'])->name('registration.index');
+Route::get('/registration/create', [RegistrationController::class, 'create'])->name('registration.create');
+Route::post('/registration/store', [RegistrationController::class, 'store'])->name('registration.store');
+Route::get('/registration/delete/{registration}', [RegistrationController::class, 'destroy'])->name('registration.delete');
+// ----------------------------------//end Registration Routes // ----------------------------------;
 
 // Routes that require authentication
 Route::middleware('auth')->group(function () {

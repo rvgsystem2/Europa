@@ -2,7 +2,7 @@
     <!-- Container -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 bg-white">
         <div class="flex justify-between h-16">
-            
+
             <!-- Left: Logo & Main Nav -->
             <div class="flex">
                 <!-- Logo -->
@@ -23,7 +23,7 @@
                     <!-- Dropdown for Roles, Permissions, Users -->
                     <div class="relative">
                         <button @click="open = !open" class="flex items-center space-x-1 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-md">
-                            <i class="fas fa-users-cog text-gray-600"></i>
+                            <i class="fas fa-users-cog text-gray-900"></i>
                             <span>Admin Tools</span>
                             <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -59,6 +59,42 @@
                     <x-nav-link :href="route('notes.index')" :active="request()->routeIs('notes.index')">
                         <i class="fas fa-sticky-note mr-1"></i> Notes
                     </x-nav-link>
+
+                     <!-- Banner-->
+                     <x-nav-link :href="route('banner.index')" :active="request()->routeIs('banner.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> Banner
+                    </x-nav-link>
+
+
+                    <!-- About -->
+                    <x-nav-link :href="route('about.index')" :active="request()->routeIs('about.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> About
+                    </x-nav-link>
+
+                    {{-- exam schedule --}}
+                    <x-nav-link :href="route('exam_schedule.index')" :active="request()->routeIs('exam_schedule.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> Exam Schedule
+                    </x-nav-link>
+
+                    {{-- free for students --}}
+                    <x-nav-link :href="route('freestd.index')" :active="request()->routeIs('freestd.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> Free for Students
+                    </x-nav-link>
+
+                    {{-- Message --}}
+                    <x-nav-link :href="route('message.index')" :active="request()->routeIs('message.index')">
+                        <i class="fas fa-sticky-note mr-1"></i> Message
+                    </x-nav-link>
+
+                                    {{-- Contact --}}
+                                    <x-nav-link :href="route('contact.index')" :active="request()->routeIs('freestd.index')">
+                                        <i class="fas fa-sticky-note mr-1"></i>Contact
+                                    </x-nav-link>
+
+                                    {{-- Registration--}}
+                                    <x-nav-link :href="route('registration.index')" :active="request()->routeIs('message.index')">
+                                        <i class="fas fa-sticky-note mr-1"></i> Registration
+                                    </x-nav-link>
                 </div>
             </div>
 
