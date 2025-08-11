@@ -1,26 +1,30 @@
 @extends('component.main')
 
 @section('content')
-    <header class="relative h-80 md:h-[32rem] overflow-hidden shadow-lg">
-        <!-- Background Image -->
-        <img src="https://cdn.pixabay.com/photo/2016/10/04/17/12/banner-1714905_1280.jpg"
-            alt="Globe Banner" class="absolute inset-0 w-full h-auto object-cover " />
+<header class="relative h-64 sm:h-80 md:h-[32rem] lg:h-[38rem] xl:h-[30rem] overflow-hidden shadow-lg">
+    <!-- Background Image -->
+    <img
+        src="https://cdn.pixabay.com/photo/2016/10/04/17/12/banner-1714905_1280.jpg"
+        alt="Globe Banner"
+        class="absolute inset-0 w-full h-full object-cover object-center"
+    />
 
-        <!-- Overlay -->
-        <div class="absolute inset-0 "></div>
+    <!-- Overlay (for better text readability) -->
+    <div class="absolute inset-0 bg-black/30"></div>
 
-        <!-- Content -->
-        <div class="relative z-10 flex items-center justify-center h-full px-6">
-            <div class="text-center md:text-left max-w-4xl">
-                <h1 class="text-4xl md:text-6xl font-extrabold text-black tracking-wide leading-tight">
-                    About Us
-                </h1>
-                <p class="mt-4 text-lg md:text-xl text-gray-800 font-light">
-                    Discover who we are, what we do, and why we do it with passion and purpose.
-                </p>
-            </div>
+    <!-- Content -->
+    <div class="relative z-10 flex items-center justify-center h-full px-4 sm:px-6 md:px-12 lg:px-16">
+        <div class="text-center md:text-left max-w-4xl">
+            <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-extrabold text-black tracking-wide leading-tight drop-shadow-lg">
+                About Us
+            </h1>
+            <p class="mt-4 text-base sm:text-lg md:text-xl lg:text-2xl text-black font-light drop-shadow">
+                Discover who we are, what we do, and why we do it with passion and purpose.
+            </p>
         </div>
-    </header>
+    </div>
+</header>
+
 
 
     <section class="flex items-center justify-center min-h-auto py-10 px-6 bg-gray-50">
